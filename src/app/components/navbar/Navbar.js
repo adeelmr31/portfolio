@@ -100,8 +100,10 @@ const Navbar = () => {
           title={"Sign In"}
           radius={"25px"}
           color={"#697987"}
-          hover={"#rgb(62 125 255)"}
+          hover={"rgb(62 125 255)"}
           border={"1px solid #697987"}
+          width={"119px"}
+          height= {'44px'}
         />
       </UserSearchArea>
     </NavbarWrapper>
