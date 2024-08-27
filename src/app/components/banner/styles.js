@@ -28,4 +28,44 @@ const BannerContainer = styled("div")(({ theme }) => ({
   },
 }));
 
-export { BannerContainer };
+const TextAreaDiv = styled("div")(({ theme }) => ({
+  width: "100%",
+  maxWidth: "720px",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  flexDirection: "column",
+  "& h1": {
+    fontSize: "45px",
+    fontWeight: 700,
+    color: "rgb(8, 3, 33)",
+    textAlign: "center",
+    marginBottom: "16px",
+  },
+  "& p": {
+    fontSize: "18px",
+    color: "rgb(99, 115, 129)",
+    textAlign: "center",
+    marginBottom: "16px",
+    fontWeight: 500,
+    lineHeight: "28px",
+    maxWidth: '650px',
+  },
+  "& button": {
+    width: "200px",
+    height: "50px",
+    borderRadius: "25px",
+    backgroundColor: "#3e7dff",
+    color: "#fff",
+    fontSize: "18px",
+    fontWeight: 600,
+    border: "none",
+    cursor: "pointer",
+    transition: "all 0.3s",
+    "&:hover": {
+      backgroundColor: "#3e7dff",
+    },
+  },
+}));
+
+export { BannerContainer, TextAreaDiv };
