@@ -14,11 +14,13 @@ const NavbarWrapper = styled("div")(({ theme }) => ({
   right: 0,
   zIndex: 100,
   transition: "all 0.3s ease",
-  margin: "0 auto",
-  maxWidth: "1420px",
+  padding: "0 60px",
+  maxWidth: "100%",
   "&.scroll": {
-    backgroundColor: "#ffffff",
+    backgroundColor: "rgba(255, 255, 255, 0.7)", // Semi-transparent background
     boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
+    height: "70px",
+    backdropFilter: "blur(10px)", // Blur effect
   },
 }));
 
@@ -46,6 +48,7 @@ const UserSearchArea = styled("div")(({ theme }) => ({
 
 const Search = styled("div")(({ theme }) => ({
   width: "40px",
+  height: "40px",
   borderRadius: "50%",
   backgroundColor: "#ffffff",
   display: "flex",
