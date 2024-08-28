@@ -20,12 +20,12 @@ const Container = styled("div")(({ theme }) => ({
 }));
 
 const CardsContainer = styled("div")(({ theme }) => ({
-    display: "grid",
-    gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))",
-    gap: "2rem",
-    width: "100%",
-    padding: "0 2rem",
-    marginBottom: "100px",
+  display: "grid",
+  gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))",
+  gap: "2rem",
+  width: "100%",
+  padding: "0 2rem",
+  marginBottom: "100px",
 }));
 
 const Team = () => {
@@ -37,11 +37,11 @@ const Team = () => {
       <p className="margin__bottom">
         Nunc sed congue arcu, In et dignissim quam condimentum vel.
       </p>
-          <CardsContainer>
-              <CustomCard />
-              <CustomCard />
-              <CustomCard />
-              <CustomCard />
+      <CardsContainer>
+        <CustomCard />
+        <CustomCard />
+        <CustomCard />
+        <CustomCard />
       </CardsContainer>
     </Container>
   );
