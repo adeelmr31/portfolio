@@ -1,7 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v13-appRouter";
-import Navbar from "./components/navbar/Navbar";
+import Navbar from "../components/navbar/Navbar";
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "../theme";
 
