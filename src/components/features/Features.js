@@ -19,7 +19,7 @@ const CardsDiv = styled("div")(({ theme }) => ({
   display: "flex",
   justifyContent: "space-between",
   alignItems: "center",
-  margin: "5rem 0",
+  marginTop: "5rem",
   width: "100%",
   flexWrap: "wrap",
 }));
