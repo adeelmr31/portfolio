@@ -13,7 +13,7 @@ const CustomButtonContainer = styled(Button)(
     width: width ? width : "100%",
     height: height ? height : "100%",
     textTransform: "none",
-    padding: "10px 15px",
+    padding: "10px",
     fontWeight: 600,
     "&:hover": {
       backgroundColor: hover ? hover : bg,
