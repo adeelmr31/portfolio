@@ -1,3 +1,4 @@
+'use client';
 import React from "react";
 import { styled } from "@mui/material/styles";
 import { Button } from "@mui/material";
@@ -12,7 +13,7 @@ const CustomButtonContainer = styled(Button)(
     width: width ? width : "100%",
     height: height ? height : "100%",
     textTransform: "none",
-    padding: "4px 10px",
+    padding: "10px 15px",
     fontWeight: 600,
     "&:hover": {
       backgroundColor: hover ? hover : bg,
