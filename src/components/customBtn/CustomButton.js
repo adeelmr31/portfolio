@@ -1,7 +1,8 @@
-'use client';
+"use client";
 import React from "react";
 import { styled } from "@mui/material/styles";
 import { Button } from "@mui/material";
+import UpArrow from "../../../static/uparrow.svg";
 
 const CustomButtonContainer = styled(Button)(
   ({ theme, bg, radius, color, fontSize, hover, border, width, height }) => ({
@@ -18,7 +19,16 @@ const CustomButtonContainer = styled(Button)(
     "&:hover": {
       backgroundColor: hover ? hover : bg,
       border: border ? "1px solid transparent" : "none",
-      color: color ? "#fff" : "#fff",
+      color: color ? color : "#fff",
+    },
+    "& span": {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      marginLeft: "5px",
+      color: "rgb(99, 115, 129)",
+      fontSize: "8px",
+      fontWeight: 600,
     },
   })
 );
@@ -33,6 +43,7 @@ const CustomButton = ({
   hover,
   border,
   width,
+  subTitle,
   ...props
 }) => {
   return (
@@ -49,6 +60,12 @@ const CustomButton = ({
       {...props}
     >
       {title}
+      {subTitle && (
+        <span>
+          {subTitle}
+          <UpArrow />
+        </span>
+      )}
     </CustomButtonContainer>
   );
 };
