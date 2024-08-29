@@ -70,6 +70,7 @@ const CustomButton = ({
       height={height}
       hoverBorder={hoverBorder}
       disableRipple
+    
       {...props}
     >
       {title}
