@@ -22,9 +22,12 @@ h6 {
   line-height: 28px;
   font-family: "Inter", sans-serif;
   text-transform: uppercase;
+  width: 100%;
 }
 
 h4 {
+  width: 100%;
+
   font-size: 45px;
   font-weight: 700;
   color: rgb(8, 3, 33);
@@ -33,6 +36,7 @@ h4 {
 }
 
 h5 {
+  width: 100%;
   font-size: 30px;
   font-weight: 700;
   color: rgb(8, 3, 33);
@@ -43,6 +47,7 @@ h5 {
 p {
   font-size: 18px;
   font-weight: 500;
+  width: 100%;
   color: rgb(99, 115, 129);
   line-height: 28px;
   font-family: "Inter", sans-serif;

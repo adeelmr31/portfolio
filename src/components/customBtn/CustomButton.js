@@ -5,7 +5,18 @@ import { Button } from "@mui/material";
 import UpArrow from "../../../static/uparrow.svg";
 
 const CustomButtonContainer = styled(Button)(
-  ({ theme, bg, radius, color, fontSize, hover, border, width, height }) => ({
+  ({
+    theme,
+    bg,
+    radius,
+    color,
+    fontSize,
+    hover,
+    border,
+    width,
+    height,
+    hoverBorder,
+  }) => ({
     backgroundColor: bg ? bg : "transparent",
     borderRadius: radius ? radius : "0px",
     color: color ? color : "#697987",
@@ -18,13 +29,13 @@ const CustomButtonContainer = styled(Button)(
     fontWeight: 600,
     "&:hover": {
       backgroundColor: hover ? hover : bg,
-      border: border ? "1px solid transparent" : "none",
+      border: border ? `1px solid ${hoverBorder}` : "none",
       color: color ? color : "#fff",
     },
     "& span": {
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
       marginLeft: "5px",
       color: "rgb(99, 115, 129)",
       fontSize: "8px",
@@ -40,6 +51,7 @@ const CustomButton = ({
   radius,
   color,
   fontSize,
+  hoverBorder,
   hover,
   border,
   width,
@@ -56,6 +68,7 @@ const CustomButton = ({
       border={border}
       width={width}
       height={height}
+      hoverBorder={hoverBorder}
       disableRipple
       {...props}
     >
