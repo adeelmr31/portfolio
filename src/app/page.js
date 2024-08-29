@@ -6,6 +6,7 @@ import Timeline from "app/components/timeline/Timeline";
 import Team from "app/components/team/Team";
 import Testimonials from "app/components/testimonials/Testimonials";
 import DownloadApp from "app/components/downloadApp/DownloadApp";
+import FAQ from "app/components/faq/FAQ";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Team />
       <Testimonials />
       <DownloadApp />
+      <FAQ />
     </main>
   );
 }
