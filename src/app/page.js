@@ -9,6 +9,7 @@ import DownloadApp from "app/components/downloadApp/DownloadApp";
 import FAQ from "app/components/faq/FAQ";
 import NewsCard from "app/components/news/NewsCards";
 import ContactUs from "app/components/contactUs/ContactUs";
+import QuickLinks from "app/components/quickLinks/QuickLinks";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       <FAQ />
       <NewsCard />
       <ContactUs />
+      <QuickLinks />
     </main>
   );
 }
