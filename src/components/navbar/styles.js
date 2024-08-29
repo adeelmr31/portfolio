@@ -12,7 +12,7 @@ const NavbarWrapper = styled("div")(({ theme }) => ({
   top: 0,
   left: 0,
   right: 0,
-  zIndex: 100,
+  zIndex: 1000000,
   transition: "all 0.3s ease",
   padding: "0 60px",
   maxWidth: "100%",

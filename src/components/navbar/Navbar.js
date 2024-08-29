@@ -23,7 +23,7 @@ const Navbar = () => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
       const viewportHeight = window.innerHeight;
-      if (scrollPosition > viewportHeight * 0.3) {
+      if (scrollPosition > viewportHeight * 0.2) {
         setScrolled(true);
       } else {
         setScrolled(false);
