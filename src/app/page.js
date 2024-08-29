@@ -7,6 +7,7 @@ import Team from "app/components/team/Team";
 import Testimonials from "app/components/testimonials/Testimonials";
 import DownloadApp from "app/components/downloadApp/DownloadApp";
 import FAQ from "app/components/faq/FAQ";
+import NewsCard from "app/components/news/NewsCards";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Testimonials />
       <DownloadApp />
       <FAQ />
+      <NewsCard />
     </main>
   );
 }
