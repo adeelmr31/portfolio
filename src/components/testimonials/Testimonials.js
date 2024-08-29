@@ -31,7 +31,6 @@ const TestimonialsContainer = styled("div")(({ theme }) => ({
   "& > div": {
     backgroundColor: "#fff",
     flexBasis: "calc(40% - 1rem)",
-    height: "250px",
     borderRadius: "10px",
     textAlign: "center",
     display: "flex",
