@@ -13,6 +13,7 @@ const CustomButtonContainer = styled(Button)(
     fontSize,
     hover,
     border,
+    hoverColor,
     width,
     height,
     hoverBorder,
@@ -30,7 +31,7 @@ const CustomButtonContainer = styled(Button)(
     "&:hover": {
       backgroundColor: hover ? hover : bg,
       border: border ? `1px solid ${hoverBorder}` : "none",
-      color: color ? color : "#fff",
+      color: hoverColor ? hoverColor : "#fff",
     },
     "& span": {
       display: "flex",
@@ -56,6 +57,7 @@ const CustomButton = ({
   border,
   width,
   subTitle,
+  hoverColor,
   ...props
 }) => {
   return (
@@ -70,7 +72,7 @@ const CustomButton = ({
       height={height}
       hoverBorder={hoverBorder}
       disableRipple
-    
+      hoverColor={hoverColor}
       {...props}
     >
       {title}

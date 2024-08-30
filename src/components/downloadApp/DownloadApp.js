@@ -49,7 +49,7 @@ const RightSection = styled("div")(({ theme }) => ({
 const DownloadApp = () => {
   return (
     <Container>
-      <LeftSection >
+      <LeftSection>
         <h6 data-aos="fade-up">Download Our App</h6>
         <h4 data-aos="fade-up">The choice is yours, we've got you covered</h4>
         <p data-aos="fade-up">
@@ -77,6 +77,7 @@ const DownloadApp = () => {
             width={"160px"}
             height={"60px"}
             hoverBorder={"#2d2947"}
+            hoverColor={"rgb(99, 115, 129)"}
           />
         </div>
       </LeftSection>

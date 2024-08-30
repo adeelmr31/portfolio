@@ -58,9 +58,8 @@ export default function CustomAccordion() {
   };
 
   return (
-    <Container>
+    <Container data-aos="fade-up">
       <Accordion
-        data-aos="fade-up"
         expanded={expanded === "panel1"}
         onChange={handleChange("panel1")}
       >
@@ -84,7 +83,6 @@ export default function CustomAccordion() {
         </AccordionDetails>
       </Accordion>
       <Accordion
-        data-aos="fade-up"
         expanded={expanded === "panel2"}
         onChange={handleChange("panel2")}
       >
@@ -106,7 +104,6 @@ export default function CustomAccordion() {
         </AccordionDetails>
       </Accordion>
       <Accordion
-        data-aos="fade-up"
         expanded={expanded === "panel3"}
         onChange={handleChange("panel3")}
       >
@@ -130,7 +127,6 @@ export default function CustomAccordion() {
         </AccordionDetails>
       </Accordion>
       <Accordion
-        data-aos="fade-up"
         expanded={expanded === "panel4"}
         onChange={handleChange("panel4")}
       >

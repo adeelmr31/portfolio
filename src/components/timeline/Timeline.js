@@ -117,6 +117,7 @@ const Timeline = () => {
               title="Bitcoin"
               radius={"25px"}
               subTitle="4.5%"
+              hoverColor={"rgb(99 115 129)"}
             />
           </Content>
         </div>
@@ -138,6 +139,7 @@ const Timeline = () => {
               title="Ethereum"
               radius={"25px"}
               subTitle="2.5%"
+              hoverColor={"rgb(99 115 129)"}
             />
           </Content>
         </div>
@@ -158,6 +160,7 @@ const Timeline = () => {
               title="Chainlink"
               radius={"25px"}
               subTitle="4.5%"
+              hoverColor={"rgb(99 115 129)"}
             />
           </Content>
         </div>
@@ -179,6 +182,7 @@ const Timeline = () => {
               title="Polygon"
               radius={"25px"}
               subTitle="2.5%"
+              hoverColor={"rgb(99 115 129)"}
             />
           </Content>
         </div>
