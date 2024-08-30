@@ -18,6 +18,7 @@ import CustomButton from "../customBtn/CustomButton";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [activeSection, setActiveSection] = useState("");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,6 +28,35 @@ const Navbar = () => {
         setScrolled(true);
       } else {
         setScrolled(false);
+      }
+
+      // Update active section based on scroll position
+      const sections = [
+        "home",
+        "partners",
+        "features",
+        "chart",
+        "timeline",
+        "team",
+        "testimonials",
+        "download",
+        "faq",
+        "news",
+        "contact",
+        "quicklinks",
+      ];
+      for (let section of sections) {
+        const element = document.getElementById(section);
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          if (
+            rect.top <= 0.3 * viewportHeight &&
+            rect.bottom >= 0.3 * viewportHeight
+          ) {
+            setActiveSection(section);
+            break;
+          }
+        }
       }
     };
 
@@ -40,7 +70,11 @@ const Navbar = () => {
     event.preventDefault();
     const section = document.getElementById(id);
     if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
+      const yOffset = -100;
+      const y =
+        section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: "smooth" });
+      setActiveSection(id);
     }
   };
 
@@ -49,7 +83,11 @@ const Navbar = () => {
       <Logo />
       <MenuItems>
         <MenuItem>
-          <Link href="#home" onClick={(e) => handleScrollToSection(e, "home")}>
+          <Link
+            href="#home"
+            onClick={(e) => handleScrollToSection(e, "home")}
+            className={activeSection === "home" ? "active" : ""}
+          >
             Home
           </Link>
         </MenuItem>
@@ -57,14 +95,16 @@ const Navbar = () => {
           <Link
             href="#features"
             onClick={(e) => handleScrollToSection(e, "features")}
+            className={activeSection === "features" ? "active" : ""}
           >
             Features
           </Link>
         </MenuItem>
         <MenuItem>
           <Link
-            href="#roadmap"
-            onClick={(e) => handleScrollToSection(e, "roadmap")}
+            href="#timeline"
+            onClick={(e) => handleScrollToSection(e, "timeline")}
+            className={activeSection === "timeline" ? "active" : ""}
           >
             Roadmap
           </Link>
@@ -73,14 +113,16 @@ const Navbar = () => {
           <Link
             href="#pages"
             onClick={(e) => handleScrollToSection(e, "pages")}
+            className={activeSection === "pages" ? "active" : ""}
           >
             Pages
           </Link>
         </MenuItem>
         <MenuItem>
           <Link
-            href="#support"
-            onClick={(e) => handleScrollToSection(e, "support")}
+            href="#contact"
+            onClick={(e) => handleScrollToSection(e, "contact")}
+            className={activeSection === "contact" ? "active" : ""}
           >
             Support
           </Link>
@@ -90,12 +132,12 @@ const Navbar = () => {
         <Search>
           <SearchIcon />
         </Search>
-        <ThemeDiv>
+        {/* <ThemeDiv>
           <div className="light__mode__box">
             <LightMode />
           </div>
           <DarkMode />
-        </ThemeDiv>
+        </ThemeDiv> */}
         <CustomButton
           title={"Sign In"}
           radius={"25px"}
@@ -103,7 +145,7 @@ const Navbar = () => {
           hover={"rgb(62 125 255)"}
           border={"1px solid #697987"}
           width={"119px"}
-          height= {'44px'}
+          height={"44px"}
         />
       </UserSearchArea>
     </NavbarWrapper>

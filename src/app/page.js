@@ -14,18 +14,42 @@ import QuickLinks from "app/components/quickLinks/QuickLinks";
 export default function Home() {
   return (
     <main>
-      <Banner />
-      <Partners />
-      <Features />
-      <Chart />
-      <Timeline />
-      <Team />
-      <Testimonials />
-      <DownloadApp />
-      <FAQ />
-      <NewsCard />
-      <ContactUs />
-      <QuickLinks />
+      <section id="home">
+        <Banner />
+      </section>
+      <section id="partners">
+        <Partners />
+      </section>
+      <section id="features">
+        <Features />
+      </section>
+      <section id="chart">
+        <Chart />
+      </section>
+      <section id="timeline">
+        <Timeline />
+      </section>
+      <section id="team">
+        <Team />
+      </section>
+      <section id="testimonials">
+        <Testimonials />
+      </section>
+      <section id="download">
+        <DownloadApp />
+      </section>
+      <section id="faq">
+        <FAQ />
+      </section>
+      <section id="news">
+        <NewsCard />
+      </section>
+      <section id="contact">
+        <ContactUs />
+      </section>
+      <section id="quicklinks">
+        <QuickLinks />
+      </section>
     </main>
   );
 }

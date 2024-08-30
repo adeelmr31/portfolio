@@ -38,6 +38,11 @@ const MenuItem = styled("div")(({ theme }) => ({
   "&:hover": {
     color: "rgb(62, 125, 255)",
   },
+  "& a": {
+    "&.active": {
+      color: "rgb(62, 125, 255)",
+    },
+  },
 }));
 
 const UserSearchArea = styled("div")(({ theme }) => ({

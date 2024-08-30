@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { styled } from "@mui/material/styles";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 
@@ -30,10 +30,32 @@ const handleScrollToTop = () => {
 };
 
 const ScrollToTop = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      if (scrollPosition > window.innerHeight) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <Scroll>
-      <KeyboardArrowUpIcon onClick={handleScrollToTop} />
-    </Scroll>
+    <>
+      {isVisible && (
+        <Scroll onClick={handleScrollToTop}>
+          <KeyboardArrowUpIcon />
+        </Scroll>
+      )}
+    </>
   );
 };
 
