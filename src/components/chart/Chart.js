@@ -16,6 +16,10 @@ const Container = styled("div")(({ theme }) => ({
     height: "100%",
     zIndex: -1,
   },
+  [theme.breakpoints.down("md")]: {
+    flexDirection: "column",
+    height: "100%",
+  },
 }));
 
 const Content = styled("div")(({ theme }) => ({
@@ -28,6 +32,10 @@ const Content = styled("div")(({ theme }) => ({
   height: "80%",
   backgroundColor: "#f5f8ff",
   borderRadius: "10px",
+  [theme.breakpoints.down("md")]: {
+    flexDirection: "column",
+    height: "100%",
+  },
 }));
 
 const Sections = styled("div")(({ theme }) => ({
@@ -36,6 +44,10 @@ const Sections = styled("div")(({ theme }) => ({
   alignItems: "center",
   width: "50%",
   height: "100%",
+  [theme.breakpoints.down("md")]: {
+    width: "100%",
+    justifyContent: "center",
+  },
 }));
 
 const SectionContent = styled("div")(({ theme }) => ({
@@ -78,6 +90,28 @@ const SectionContent = styled("div")(({ theme }) => ({
       backgroundColor: "rgb(134 150 202)",
     },
   },
+  [theme.breakpoints.down("md")]: {
+    height: "100%",
+    "& > h6": {
+      fontSize: "1.2rem",
+    },
+    "& > h4": {
+      fontSize: "1.5rem",
+    },
+    "& > p": {
+      width: "100%",
+    },
+    "& > ul": {
+      "& > li": {
+        margin: "10px 0 10px 20px",
+        "&:before": {
+          left: "-20px",
+          width: "16px",
+          height: "16px",
+        },
+      },
+    },
+  },
 }));
 
 const Chart = () => {
@@ -88,11 +122,11 @@ const Chart = () => {
         src="../../../static/chartSvg.svg"
         alt="background"
       />
-      <Content data-aos="fade-up">
+      <Content>
         <Sections>
           <PiChartCard />
         </Sections>
-        <Sections>
+        <Sections data-aos="fade-up">
           <SectionContent>
             <h6>TOKEN</h6>
             <h4>Token Sale</h4>

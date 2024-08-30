@@ -19,6 +19,9 @@ const ContentContainer = styled("div")(({ theme }) => ({
   alignItems: "center",
   width: "80%",
   margin: "100px auto 170px auto",
+  [theme.breakpoints.down("md")]: {
+    flexDirection: "column",
+  },
 }));
 
 const LeftContainer = styled("div")(({ theme }) => ({
@@ -28,6 +31,10 @@ const LeftContainer = styled("div")(({ theme }) => ({
   alignItems: "center",
   width: "50%",
   height: "100%",
+  [theme.breakpoints.down("md")]: {
+    width: "100%",
+    marginBottom: "50px",
+  },
 }));
 
 const ContentMain = styled("div")(({ theme }) => ({
@@ -63,6 +70,9 @@ const RightContainer = styled("div")(({ theme }) => ({
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
+  [theme.breakpoints.down("md")]: {
+    width: "100%",
+  },
 }));
 
 const FormMainContainer = styled("div")(({ theme }) => ({
@@ -113,6 +123,9 @@ const FormMainContainer = styled("div")(({ theme }) => ({
       height: "160px",
     },
   },
+  [theme.breakpoints.down("md")]: {
+    width: "100%",
+  },
 }));
 
 const NewsLetter = styled("div")(({ theme }) => ({
@@ -127,6 +140,9 @@ const NewsLetter = styled("div")(({ theme }) => ({
   backgroundColor: "#131b4d",
   position: "absolute",
   bottom: "-10%",
+  [theme.breakpoints.down("md")]: {
+    height: "300px",
+  },
 }));
 
 const ContentNewsletter = styled("div")(({ theme }) => ({
@@ -141,6 +157,10 @@ const ContentNewsletter = styled("div")(({ theme }) => ({
     right: "-60px",
     zIndex: "15",
   },
+  [theme.breakpoints.down("md")]: {
+    flexDirection: "column",
+    gap: "20px",
+  },
 }));
 
 const InputDiv = styled("div")(({ theme }) => ({
@@ -148,6 +168,9 @@ const InputDiv = styled("div")(({ theme }) => ({
   justifyContent: "center",
   alignItems: "center",
   width: "50%",
+  [theme.breakpoints.down("md")]: {
+    width: "100%",
+  },
 }));
 
 const NewsDiv = styled("div")(({ theme }) => ({
@@ -165,6 +188,9 @@ const NewsDiv = styled("div")(({ theme }) => ({
     fontSize: "18px",
     fontWeight: "500",
   },
+  [theme.breakpoints.down("md")]: {
+    width: "100%",
+  },
 }));
 
 const InputDivSection = styled("div")(({ theme }) => ({
@@ -176,9 +202,12 @@ const InputDivSection = styled("div")(({ theme }) => ({
   display: "flex",
   justifyContent: "flex-start",
   alignItems: "center",
-    overflow: "hidden",
+  overflow: "hidden",
   zIndex: "20",
-  
+  [theme.breakpoints.down("md")]: {
+    width: "100%",
+  },
+
   "& > input": {
     height: "100%",
     width: "70%",

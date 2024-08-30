@@ -22,6 +22,13 @@ const Container = styled("div")(({ theme }) => ({
     fontSize: "24px",
     fontWeight: 700,
     marginBottom: "40px",
+    [theme.breakpoints.down("md")]: {
+      marginTop: "40px",
+    },
+  },
+  [theme.breakpoints.down("md")]: {
+    height: "auto",
+    marginTop: "4rem",
   },
 }));
 

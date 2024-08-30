@@ -76,7 +76,7 @@ const Content = styled("div")(({ theme }) => ({
   width: "45%",
   backgroundColor: "rgb(245 248 255)",
   borderRadius: "10px",
-  height: "230px",
+  // height: "230px",
   marginRight: "50px",
   padding: "20px",
   textAlign: "right",

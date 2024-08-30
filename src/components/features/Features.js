@@ -32,6 +32,12 @@ const CardItem = styled("div")(({ theme }) => ({
   width: "30%",
   gap: "1rem",
   marginBottom: "4rem",
+  [theme.breakpoints.down("md")]: {
+    width: "50%",
+  },
+  [theme.breakpoints.down("sm")]: {
+    width: "100%",
+  },
 }));
 
 const IconDiv = styled("div")(({ theme }) => ({

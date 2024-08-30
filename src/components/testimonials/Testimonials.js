@@ -44,6 +44,9 @@ const TestimonialsContainer = styled("div")(({ theme }) => ({
       top: "0",
       right: "0",
     },
+    [theme.breakpoints.down("md")]: {
+      flexBasis: "calc(80% - 1rem)",
+    },
   },
 }));
 
@@ -55,10 +58,10 @@ const Content = styled("div")(({ theme }) => ({
   zIndex: "100",
   width: "100%",
   height: "100%",
-    padding: "2rem",
-    "& > p": {
-        textAlign: "left",
-    },
+  padding: "2rem",
+  "& > p": {
+    textAlign: "left",
+  },
 }));
 
 const ImgUser = styled("div")(({ theme }) => ({

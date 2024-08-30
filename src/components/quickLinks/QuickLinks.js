@@ -27,6 +27,9 @@ const ContentContainer = styled("div")(({ theme }) => ({
   margin: "0 auto",
   padding: "5rem 0",
   borderBottom: "1px solid #e0e0e0",
+  [theme.breakpoints.down("md")]: {
+    gap: "2rem",
+  },
 }));
 
 const ContentMain = styled("div")(({ theme, flexBasis }) => ({
@@ -36,6 +39,19 @@ const ContentMain = styled("div")(({ theme, flexBasis }) => ({
   alignItems: "flex-start",
   flexBasis: flexBasis ? `calc(${flexBasis} - 1rem)` : "calc(25% - 1rem)",
   gap: "2rem",
+  [theme.breakpoints.down("md")]: {
+    flexBasis: "calc(100% - 1rem)",
+  },
+  "&:nth-child(2)": {
+    [theme.breakpoints.down("md")]: {
+      flexBasis: "calc(50% - 1rem)",
+    },
+  },
+  "&:nth-child(3)": {
+    [theme.breakpoints.down("md")]: {
+      flexBasis: "calc(50% - 1rem)",
+    },
+  },
 }));
 
 const SocialLinks = styled("div")(({ theme }) => ({
@@ -143,44 +159,24 @@ const QuickLinks = () => {
         <ContentMain flexBasis={"15%"}>
           <QuickLinksDiv>
             <h1 data-aos="fade-up">Quick Links</h1>
-            <div className="links">
-              <a data-aos="fade-up" href="#">
-                What is ico
-              </a>
-              <a data-aos="fade-up" href="#">
-                Roadmap
-              </a>
-              <a data-aos="fade-up" href="#">
-                Whitepaper
-              </a>
-              <a data-aos="fade-up" href="#">
-                Social Network
-              </a>
-              <a data-aos="fade-up" href="#">
-                Join Us Now
-              </a>
+            <div data-aos="fade-up" className="links">
+              <a href="#">What is ico</a>
+              <a href="#">Roadmap</a>
+              <a href="#">Whitepaper</a>
+              <a href="#">Social Network</a>
+              <a href="#">Join Us Now</a>
             </div>
           </QuickLinksDiv>
         </ContentMain>
         <ContentMain flexBasis={"15%"}>
           <QuickLinksDiv>
-            <h1 data-aos="fade-up">Supports</h1>
-            <div className="links">
-              <a data-aos="fade-up" href="#">
-                Setting & Privacy
-              </a>
-              <a data-aos="fade-up" href="#">
-                Help & Support
-              </a>
-              <a data-aos="fade-up" href="#">
-                Terms & Conditions
-              </a>
-              <a data-aos="fade-up" href="#">
-                24/7 Support
-              </a>
-              <a data-aos="fade-up" href="#">
-                On Point FAQs
-              </a>
+            <h1>Supports</h1>
+            <div data-aos="fade-up" className="links">
+              <a href="#">Setting & Privacy</a>
+              <a href="#">Help & Support</a>
+              <a href="#">Terms & Conditions</a>
+              <a href="#">24/7 Support</a>
+              <a href="#">On Point FAQs</a>
             </div>
           </QuickLinksDiv>
         </ContentMain>

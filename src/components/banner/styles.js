@@ -28,6 +28,9 @@ const BannerContainer = styled("div")(({ theme }) => ({
     left: 0,
     height: "100%",
   },
+  [theme.breakpoints.down("md")]: {
+    height: "auto",
+  },
 }));
 
 const TextAreaDiv = styled("div")(({ theme }) => ({
@@ -44,6 +47,10 @@ const TextAreaDiv = styled("div")(({ theme }) => ({
     color: "rgb(8, 3, 33)",
     textAlign: "center",
     marginBottom: "16px",
+    [theme.breakpoints.down("md")]: {
+      fontSize: "30px",
+      padding: "0 16px",
+    },
   },
   "& p": {
     fontSize: "18px",
@@ -53,6 +60,10 @@ const TextAreaDiv = styled("div")(({ theme }) => ({
     fontWeight: 500,
     lineHeight: "28px",
     maxWidth: "650px",
+    [theme.breakpoints.down("md")]: {
+      fontSize: "15px",
+      padding: "0 16px",
+    },
   },
   "& button": {
     width: "200px",
@@ -78,6 +89,10 @@ const DigitalCurrencies = styled("div")(({ theme }) => ({
   gap: "16px",
   marginTop: "32px",
   zIndex: 1,
+  flexWrap: "wrap",
+  [theme.breakpoints.down("md")]: {
+    gap: "8px",
+  },
 }));
 
 const Currency = styled("div")(({ theme }) => ({

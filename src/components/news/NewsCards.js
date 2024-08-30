@@ -21,6 +21,10 @@ const Container = styled("div")(({ theme }) => ({
   width: "100%",
   margin: "100px auto 0 auto",
   padding: "8rem 0",
+  [theme.breakpoints.down("md")]: {
+    padding: "0",
+    marginBottom: '2rem'
+  },
 
   "& > h4": {
     marginBottom: "1rem",
@@ -42,6 +46,10 @@ const ImgCard = styled(Card)(({ theme }) => ({
   flexBasis: "calc(33.33% - 1rem)",
   backgroundColor: "#f5f8ff",
   borderRadius: "10px",
+  [theme.breakpoints.down("md")]: {
+    flexBasis: "calc(100% - 1rem)",
+    margin: "0 auto",
+  },
   "& .date__div": {
     display: "flex",
     width: "90%",

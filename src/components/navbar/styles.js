@@ -22,12 +22,21 @@ const NavbarWrapper = styled("div")(({ theme }) => ({
     height: "70px",
     backdropFilter: "blur(10px)", // Blur effect
   },
+  [theme.breakpoints.down("md")]: {
+    padding: "0 20px",
+    "& img": {
+      width: "110px",
+    },
+  },
 }));
 
 const MenuItems = styled("div")(({ theme }) => ({
   display: "flex",
   alignItems: "center",
   gap: "40px",
+  [theme.breakpoints.down("md")]: {
+    display: "none",
+  },
 }));
 
 const MenuItem = styled("div")(({ theme }) => ({
@@ -49,6 +58,9 @@ const UserSearchArea = styled("div")(({ theme }) => ({
   display: "flex",
   gap: "20px",
   alignItems: "center",
+  [theme.breakpoints.down("md")]: {
+    gap: "0",
+  },
 }));
 
 const Search = styled("div")(({ theme }) => ({

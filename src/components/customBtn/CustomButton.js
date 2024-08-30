@@ -8,6 +8,7 @@ const CustomButtonContainer = styled(Button)(
   ({
     theme,
     bg,
+    hidden,
     radius,
     color,
     fontSize,
@@ -28,6 +29,9 @@ const CustomButtonContainer = styled(Button)(
     textTransform: "none",
     padding: "10px",
     fontWeight: 600,
+    [theme.breakpoints.down("sm")]: {
+      display: hidden ? "none" : "block",
+    },
     "&:hover": {
       backgroundColor: hover ? hover : bg,
       border: border ? `1px solid ${hoverBorder}` : "none",
@@ -47,6 +51,7 @@ const CustomButtonContainer = styled(Button)(
 
 const CustomButton = ({
   title,
+  hidden,
   bg,
   height,
   radius,
@@ -68,6 +73,7 @@ const CustomButton = ({
       color={color}
       hover={hover}
       border={border}
+      hidden={hidden}
       width={width}
       height={height}
       hoverBorder={hoverBorder}

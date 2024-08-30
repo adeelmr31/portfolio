@@ -12,6 +12,12 @@ const Container = styled("div")(({ theme }) => ({
   width: "80%",
   margin: "0 auto",
   height: "calc(100vh - 64px)",
+  [theme.breakpoints.down("md")]: {
+    flexDirection: "column",
+    height: "auto",
+    padding: "5rem 0",
+    gap: "3rem",
+  },
 }));
 
 const LeftSection = styled("div")(({ theme }) => ({
@@ -36,6 +42,9 @@ const LeftSection = styled("div")(({ theme }) => ({
     alignItems: "center",
     width: "100%",
   },
+  [theme.breakpoints.down("md")]: {
+    width: "80%",
+  },
 }));
 
 const RightSection = styled("div")(({ theme }) => ({
@@ -44,6 +53,9 @@ const RightSection = styled("div")(({ theme }) => ({
   alignItems: "center",
   width: "50%",
   height: "100%",
+  [theme.breakpoints.down("md")]: {
+    width: "80%",
+  },
 }));
 
 const DownloadApp = () => {
