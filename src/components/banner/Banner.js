@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import {
   BannerContainer,
   TextAreaDiv,
@@ -18,11 +19,12 @@ import BTC5Icon from "app/assets/images/BTC5.svg";
 import CustomButton from "../customBtn/CustomButton";
 
 const Banner = () => {
+  
   return (
     <BannerContainer>
       <ImgIcon className="banner__first" alt="background" />
       <BannerIcon className="banner__second" alt="background" />
-      <TextAreaDiv>
+      <TextAreaDiv data-aos="fade-up">
         <h1>Next.js Template and Boilerplate for Crypto, ICO and Web3</h1>
         <p>
           A Next.js website template for Crypto Currency, Blockchain, ICO, and
@@ -32,7 +34,7 @@ const Banner = () => {
           Crypto, Blockchain, and Web3.
         </p>
       </TextAreaDiv>
-      <DigitalCurrencies>
+      <DigitalCurrencies data-aos="fade-up">
         {/* Currency */}
         <Currency>
           <CustomToolTip arrow placement="top" title="Bitcoin (BTC)">
@@ -70,7 +72,7 @@ const Banner = () => {
           </CustomToolTip>
         </Currency>
       </DigitalCurrencies>
-      <ButtonDiv>
+      <ButtonDiv data-aos="fade-up">
         <CustomButton
           color={"#fff"}
           bg={"#3e7dff"}

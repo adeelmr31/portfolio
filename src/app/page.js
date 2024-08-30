@@ -1,3 +1,4 @@
+"use client";
 import Partners from "app/components/partners/Partners";
 import Banner from "../components/banner/Banner";
 import Features from "app/components/features/Features";
@@ -10,8 +11,16 @@ import FAQ from "app/components/faq/FAQ";
 import NewsCard from "app/components/news/NewsCards";
 import ContactUs from "app/components/contactUs/ContactUs";
 import QuickLinks from "app/components/quickLinks/QuickLinks";
+import AOS from "aos";
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      duration: 400,
+    });
+  }, []);
   return (
     <main>
       <section id="home">

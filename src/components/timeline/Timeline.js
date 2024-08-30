@@ -91,13 +91,17 @@ const Content = styled("div")(({ theme }) => ({
 const Timeline = () => {
   return (
     <Container>
-      <h6>RoadMap</h6>
-      <h4>The Timeline</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      <p>Nunc sed congue arcu, In et dignissim quam condimentum vel.</p>
-      <TimelineDiv>
+      <h6 data-aos="fade-up">RoadMap</h6>
+      <h4 data-aos="fade-up">The Timeline</h4>
+      <p data-aos="fade-up">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
+      <p data-aos="fade-up">
+        Nunc sed congue arcu, In et dignissim quam condimentum vel.
+      </p>
+      <TimelineDiv data-aos="fade-up">
         <div>
-          <Content>
+          <Content data-aos="fade-up">
             <h5>Feb 25, 2025</h5>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed
@@ -117,7 +121,7 @@ const Timeline = () => {
           </Content>
         </div>
         <div className="right">
-          <Content className="right__margin">
+          <Content data-aos="fade-up" className="right__margin">
             {" "}
             <h5>Jan 14, 2026</h5>
             <p>
@@ -138,7 +142,7 @@ const Timeline = () => {
           </Content>
         </div>
         <div>
-          <Content>
+          <Content data-aos="fade-up">
             <h5>Feb 25, 2025</h5>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed
@@ -158,7 +162,7 @@ const Timeline = () => {
           </Content>
         </div>
         <div className="right">
-          <Content className="right__margin">
+          <Content data-aos="fade-up" className="right__margin">
             {" "}
             <h5>Jan 14, 2026</h5>
             <p>

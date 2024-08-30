@@ -120,12 +120,12 @@ const QuickLinks = () => {
       <FooterBg className="bg__footer" />
       <ContentContainer>
         <ContentMain flexBasis={"30%"}>
-          <img src="/static/logo.svg" alt="logo" />
-          <p>
+          <img data-aos="fade-up" src="/static/logo.svg" alt="logo" />
+          <p data-aos="fade-up">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae
             quam nec ante fringilla vel at erat convallis elit.
           </p>
-          <SocialLinks className="social__links">
+          <SocialLinks data-aos="fade-up" className="social__links">
             <div className="social__items">
               <Discord />
             </div>
@@ -142,32 +142,52 @@ const QuickLinks = () => {
         </ContentMain>
         <ContentMain flexBasis={"15%"}>
           <QuickLinksDiv>
-            <h1>Quick Links</h1>
+            <h1 data-aos="fade-up">Quick Links</h1>
             <div className="links">
-              <a href="#">What is ico</a>
-              <a href="#">Roadmap</a>
-              <a href="#">Whitepaper</a>
-              <a href="#">Social Network</a>
-              <a href="#">Join Us Now</a>
+              <a data-aos="fade-up" href="#">
+                What is ico
+              </a>
+              <a data-aos="fade-up" href="#">
+                Roadmap
+              </a>
+              <a data-aos="fade-up" href="#">
+                Whitepaper
+              </a>
+              <a data-aos="fade-up" href="#">
+                Social Network
+              </a>
+              <a data-aos="fade-up" href="#">
+                Join Us Now
+              </a>
             </div>
           </QuickLinksDiv>
         </ContentMain>
         <ContentMain flexBasis={"15%"}>
           <QuickLinksDiv>
-            <h1>Supports</h1>
+            <h1 data-aos="fade-up">Supports</h1>
             <div className="links">
-              <a href="#">Setting & Privacy</a>
-              <a href="#">Help & Support</a>
-              <a href="#">Terms & Conditions</a>
-              <a href="#">24/7 Support</a>
-              <a href="#">On Point FAQs</a>
+              <a data-aos="fade-up" href="#">
+                Setting & Privacy
+              </a>
+              <a data-aos="fade-up" href="#">
+                Help & Support
+              </a>
+              <a data-aos="fade-up" href="#">
+                Terms & Conditions
+              </a>
+              <a data-aos="fade-up" href="#">
+                24/7 Support
+              </a>
+              <a data-aos="fade-up" href="#">
+                On Point FAQs
+              </a>
             </div>
           </QuickLinksDiv>
         </ContentMain>
         <ContentMain flexBasis={"35%"}>
           <QuickLinksDiv>
-            <h1>News & Post</h1>
-            <div className="news__div">
+            <h1 data-aos="fade-up">News & Post</h1>
+            <div data-aos="fade-up" className="news__div">
               <img src="/static/userImg.jpg" alt="news" />
               <div className="details">
                 <p className="hover__text">
@@ -181,7 +201,7 @@ const QuickLinks = () => {
                 </p>
               </div>
             </div>
-            <div className="news__div">
+            <div data-aos="fade-up" className="news__div">
               <img src="/static/userImg.jpg" alt="news" />
               <div className="details">
                 <p className="hover__text">

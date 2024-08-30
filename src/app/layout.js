@@ -5,6 +5,7 @@ import { ThemeProvider } from "@mui/material/styles";
 import theme from "../theme";
 import Footer from "app/components/footer/Footer";
 import ScrollToTop from "app/components/scrollToTop/ScrollToTop";
+import "aos/dist/aos.css";
 
 export const metadata = {
   title: "Crypto",

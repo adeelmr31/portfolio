@@ -207,44 +207,52 @@ const ContactUs = () => {
       <ContentContainer>
         <LeftContainer>
           <div>
-            <h6>contact us</h6>
-            <h4>Let's talk about your problem.</h4>
+            <h6 data-aos="fade-up">contact us</h6>
+            <h4 data-aos="fade-up">Let's talk about your problem.</h4>
           </div>
           <ContentMain>
             {/* card here */}
             <ContentSection>
               <HeadingContent>
-                <h6>Our Location</h6>
-                <p>401 Broadway, 24th Floor, Orchard Cloud View, London</p>
+                <h6 data-aos="fade-up">Our Location</h6>
+                <p data-aos="fade-up">
+                  401 Broadway, 24th Floor, Orchard Cloud View, London
+                </p>
               </HeadingContent>
             </ContentSection>
             {/* card here */}
             <ContentSection>
               <HeadingContent>
-                <h6>Our Location</h6>
-                <p>401 Broadway, 24th Floor, Orchard Cloud View, London</p>
+                <h6 data-aos="fade-up">Our Location</h6>
+                <p data-aos="fade-up">
+                  401 Broadway, 24th Floor, Orchard Cloud View, London
+                </p>
               </HeadingContent>
             </ContentSection>
             {/* card here */}
             <ContentSection>
               <HeadingContent>
-                <h6>Our Location</h6>
-                <p>401 Broadway, 24th Floor, Orchard Cloud View, London</p>
+                <h6 data-aos="fade-up">Our Location</h6>
+                <p data-aos="fade-up">
+                  401 Broadway, 24th Floor, Orchard Cloud View, London
+                </p>
               </HeadingContent>
             </ContentSection>
             {/* card here */}
             <ContentSection>
               <HeadingContent>
-                <h6>Our Location</h6>
-                <p>401 Broadway, 24th Floor, Orchard Cloud View, London</p>
+                <h6 data-aos="fade-up">Our Location</h6>
+                <p data-aos="fade-up">
+                  401 Broadway, 24th Floor, Orchard Cloud View, London
+                </p>
               </HeadingContent>
             </ContentSection>
           </ContentMain>
         </LeftContainer>
         <RightContainer>
           <FormMainContainer>
-            <h5>Send us a Message</h5>
-            <div className="form-group">
+            <h5 data-aos="fade-up">Send us a Message</h5>
+            <div data-aos="fade-up" className="form-group">
               <label>Full Name*</label>
               <input
                 type="text"
@@ -268,6 +276,7 @@ const ContactUs = () => {
               />
             </div>
             <CustomButton
+              data-aos="fade-up"
               title={"Send Message"}
               bg={"#3E7DFF"}
               radius={"50px"}
@@ -276,7 +285,7 @@ const ContactUs = () => {
           </FormMainContainer>
         </RightContainer>
       </ContentContainer>
-      <NewsLetter>
+      <NewsLetter data-aos="fade-up">
         <ContentNewsletter>
           <NewsVector className="news-vector" />
 

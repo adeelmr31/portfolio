@@ -48,7 +48,7 @@ const ImgDiv = styled("div")(({ theme }) => ({
 
 const Partners = () => {
   return (
-    <Container>
+    <Container data-aos="fade-up">
       <h1 className="heading">
         Join the 20,000+ companies using the our platform
       </h1>

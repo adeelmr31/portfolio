@@ -49,15 +49,15 @@ const RightSection = styled("div")(({ theme }) => ({
 const DownloadApp = () => {
   return (
     <Container>
-      <LeftSection>
-        <h6>Download Our App</h6>
-        <h4>The choice is yours, we've got you covered</h4>
-        <p>
+      <LeftSection >
+        <h6 data-aos="fade-up">Download Our App</h6>
+        <h4 data-aos="fade-up">The choice is yours, we've got you covered</h4>
+        <p data-aos="fade-up">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
           tristique, nisl ut viverra porttitor, dolor sem lacinia orci, et
           pretium quam mi a eros sed molestie est.
         </p>
-        <div className="app-buttons">
+        <div data-aos="fade-up" className="app-buttons">
           <CustomButton
             startIcon={<AppStore />}
             title={"App Store"}
@@ -82,7 +82,7 @@ const DownloadApp = () => {
       </LeftSection>
       <RightSection>
         {/* <AppImg /> */}
-        <img src="/static/app-image-2.webp" alt="app" />
+        <img data-aos="fade-up" src="/static/app-image-2.webp" alt="app" />
       </RightSection>
     </Container>
   );

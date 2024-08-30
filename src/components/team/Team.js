@@ -31,13 +31,15 @@ const CardsContainer = styled("div")(({ theme }) => ({
 const Team = () => {
   return (
     <Container>
-      <h6>our team</h6>
-      <h4>Meet out Team</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      <p className="margin__bottom">
+      <h6 data-aos="fade-up">our team</h6>
+      <h4 data-aos="fade-up">Meet out Team</h4>
+      <p data-aos="fade-up">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
+      <p data-aos="fade-up" className="margin__bottom">
         Nunc sed congue arcu, In et dignissim quam condimentum vel.
       </p>
-      <CardsContainer>
+      <CardsContainer data-aos="fade-up">
         <CustomCard />
         <CustomCard />
         <CustomCard />

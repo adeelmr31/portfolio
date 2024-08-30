@@ -47,11 +47,15 @@ const IconDiv = styled("div")(({ theme }) => ({
 const Features = () => {
   return (
     <Container>
-      <h6>CRYPTO FEATURE</h6>
-      <h4>Best Features</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      <p>Nunc sed congue arcu, In et dignissim quam condimentum vel.</p>
-      <CardsDiv>
+      <h6 data-aos="fade-up">CRYPTO FEATURE</h6>
+      <h4 data-aos="fade-up">Best Features</h4>
+      <p data-aos="fade-up">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
+      <p data-aos="fade-up">
+        Nunc sed congue arcu, In et dignissim quam condimentum vel.
+      </p>
+      <CardsDiv data-aos="fade-up">
         <CardItem>
           <IconDiv>
             <img src="../../../static/safety.svg" alt="icon" />

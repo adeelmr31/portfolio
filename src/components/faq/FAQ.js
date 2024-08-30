@@ -39,10 +39,10 @@ const FAQ = () => {
   return (
     <Container>
       <FaqBg className="bg__faq" />
-      <h6>FAQ</h6>
-      <h4>Frequently Asked Questions</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      <p className="margin__bottom">
+      <h6 data-aos="fade-up">FAQ</h6>
+      <h4 data-aos="fade-up">Frequently Asked Questions</h4>
+      <p data-aos="fade-up">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p  data-aos="fade-up"className="margin__bottom">
         Nunc sed congue arcu, In et dignissim quam condimentum vel.
       </p>
       <AccordionContainer>

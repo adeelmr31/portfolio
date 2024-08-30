@@ -81,14 +81,16 @@ const ImgCard = styled(Card)(({ theme }) => ({
 const NewsCard = () => {
   return (
     <Container>
-      <h6>LATEST NEWS</h6>
-      <h4>Recent News & Blogs</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      <p className="margin__bottom">
+      <h6 data-aos="fade-up">LATEST NEWS</h6>
+      <h4 data-aos="fade-up">Recent News & Blogs</h4>
+      <p data-aos="fade-up">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
+      <p data-aos="fade-up" className="margin__bottom">
         Nunc sed congue arcu, In et dignissim quam condimentum vel.
       </p>
       <NewsContainer>
-        <ImgCard>
+        <ImgCard data-aos="fade-up">
           <CardMedia
             component="img"
             alt="news"
@@ -162,7 +164,7 @@ const NewsCard = () => {
             />
           </CardActions>
         </ImgCard>
-        <ImgCard>
+        <ImgCard data-aos="fade-up">
           <CardMedia
             component="img"
             alt="news"
@@ -236,7 +238,7 @@ const NewsCard = () => {
             />
           </CardActions>
         </ImgCard>
-        <ImgCard>
+        <ImgCard data-aos="fade-up">
           <CardMedia
             component="img"
             alt="news"

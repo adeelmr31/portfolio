@@ -88,7 +88,7 @@ const Chart = () => {
         src="../../../static/chartSvg.svg"
         alt="background"
       />
-      <Content>
+      <Content data-aos="fade-up">
         <Sections>
           <PiChartCard />
         </Sections>

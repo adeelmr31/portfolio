@@ -76,6 +76,8 @@ const ImgUser = styled("div")(({ theme }) => ({
       fontSize: "1.2rem",
       fontWeight: "bold",
       lineHeight: "1.5rem",
+      width: "100%",
+      textAlign: "left",
     },
     "& p": {
       fontSize: "14px",
@@ -98,14 +100,16 @@ const ImgUser = styled("div")(({ theme }) => ({
 const Testimonials = () => {
   return (
     <Container>
-      <h6>TESTIMONIALS</h6>
-      <h4>What Our Client Say's</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      <p className="margin__bottom">
+      <h6 data-aos="fade-up">TESTIMONIALS</h6>
+      <h4 data-aos="fade-up">What Our Client Say's</h4>
+      <p data-aos="fade-up">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
+      <p data-aos="fade-up" className="margin__bottom">
         Nunc sed congue arcu, In et dignissim quam condimentum vel.
       </p>
       <TestimonialsContainer>
-        <div>
+        <div data-aos="fade-right">
           <BgTestimonials className="bg" />
           <Content>
             <ImgUser>
@@ -124,7 +128,7 @@ const Testimonials = () => {
             </p>
           </Content>
         </div>
-        <div>
+        <div data-aos="fade-left">
           <BgTestimonials className="bg" />
           <Content>
             <ImgUser>
@@ -143,7 +147,7 @@ const Testimonials = () => {
             </p>
           </Content>
         </div>
-        <div>
+        <div data-aos="fade-right">
           <BgTestimonials className="bg" />
           <Content>
             <ImgUser>
@@ -162,7 +166,7 @@ const Testimonials = () => {
             </p>
           </Content>
         </div>
-        <div>
+        <div data-aos="fade-left">
           <BgTestimonials className="bg" />
           <Content>
             <ImgUser>
