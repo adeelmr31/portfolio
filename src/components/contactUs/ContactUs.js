@@ -49,6 +49,9 @@ const ContentSection = styled("div")(({ theme }) => ({
   alignItems: "center",
   marginTop: "50px",
   flexBasis: "calc(45% - 20px)",
+  [theme.breakpoints.down("md")]: {
+    flexBasis: "100%",
+  },
 }));
 
 const HeadingContent = styled("div")(({ theme }) => ({
@@ -228,6 +231,9 @@ const ButtonDiv = styled("div")(({ theme }) => ({
   position: "absolute",
   right: "10px",
   width: "28%",
+  [theme.breakpoints.down("md")]: {
+    display: "none",
+  },
 }));
 
 const ContactUs = () => {

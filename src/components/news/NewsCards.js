@@ -105,7 +105,7 @@ const NewsCard = () => {
             height="250"
             image="/static/news.avif"
           />
-          <CardContent sx={{ padding: "2rem" }}>
+          <CardContent sx={{ padding: "1rem" }}>
             <div className="date__div">
               <div className="items">
                 <UserIcon />

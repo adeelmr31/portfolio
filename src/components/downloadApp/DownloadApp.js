@@ -17,6 +17,7 @@ const Container = styled("div")(({ theme }) => ({
     height: "auto",
     padding: "5rem 0",
     gap: "3rem",
+    width: "100%",
   },
 }));
 
@@ -41,6 +42,13 @@ const LeftSection = styled("div")(({ theme }) => ({
     gap: "20px",
     alignItems: "center",
     width: "100%",
+    [theme.breakpoints.down("md")]: {
+      width: "80%",
+      flexDirection: "column",
+      "& button": {
+        width: "100%",
+      },
+    },
   },
   [theme.breakpoints.down("md")]: {
     width: "80%",

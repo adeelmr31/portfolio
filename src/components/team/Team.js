@@ -23,7 +23,6 @@ const CardsContainer = styled("div")(({ theme }) => ({
   display: "grid",
   gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))",
   gap: "2rem",
-  width: "100%",
   padding: "0 2rem",
   marginBottom: "100px",
 }));
