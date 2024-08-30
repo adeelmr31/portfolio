@@ -18,6 +18,9 @@ const Container = styled("div")(({ theme }) => ({
   "& > h4": {
     marginBottom: "1rem",
   },
+  [theme.breakpoints.down("md")]: {
+    width: "95%",
+  },
 }));
 
 const TimelineDiv = styled("div")(({ theme }) => ({
@@ -36,17 +39,28 @@ const TimelineDiv = styled("div")(({ theme }) => ({
     width: "2px",
     height: "100%",
     backgroundColor: "#f5f8ff",
+    [theme.breakpoints.down("md")]: {
+      display: "none",
+    },
   },
   "& .right": {
     position: "relative",
     width: "100%",
     justifyContent: "flex-end",
     display: "flex",
+
     "& .right__margin": {
       marginLeft: "50px",
       textAlign: "left !important",
       marginRight: "0 !important",
       alignItems: "flex-start !important",
+      [theme.breakpoints.down("md")]: {
+        width: "100%",
+        marginLeft: "0",
+        "& > h5": {
+          fontSize: "16px",
+        },
+      },
     },
   },
   "& > div": {
@@ -64,6 +78,9 @@ const TimelineDiv = styled("div")(({ theme }) => ({
       borderRadius: "50%",
       backgroundColor: "#fff",
       border: "5px solid rgb(62 125 255)",
+      [theme.breakpoints.down("md")]: {
+        display: "none",
+      },
     },
   },
 }));
@@ -76,7 +93,6 @@ const Content = styled("div")(({ theme }) => ({
   width: "45%",
   backgroundColor: "rgb(245 248 255)",
   borderRadius: "10px",
-  // height: "230px",
   marginRight: "50px",
   padding: "20px",
   textAlign: "right",
@@ -85,6 +101,18 @@ const Content = styled("div")(({ theme }) => ({
     fontWeight: "700",
     color: "rgb(8, 3, 33)",
     lineHeight: "28px",
+  },
+  [theme.breakpoints.down("md")]: {
+    width: "100%",
+    marginRight: "0",
+    alignItems: "flex-start",
+    "& > h5": {
+      fontSize: "16px",
+      textAlign: "left",
+    },
+    "& > p": {
+      textAlign: "left",
+    },
   },
 }));
 

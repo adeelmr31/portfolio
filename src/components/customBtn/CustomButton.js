@@ -29,8 +29,11 @@ const CustomButtonContainer = styled(Button)(
     textTransform: "none",
     padding: "10px",
     fontWeight: 600,
+    display: "flex",
     [theme.breakpoints.down("sm")]: {
       display: hidden ? "none" : "block",
+      width: "fit-content",
+      display: "flex",
     },
     "&:hover": {
       backgroundColor: hover ? hover : bg,
