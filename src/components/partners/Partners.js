@@ -57,10 +57,10 @@ const Partners = () => {
       <ImgDiv>
         <div className="svg__brands">
           {/* <BrandsOne /> */}
-          <img src="static/clients/futurevision.png" style={{height: 60, width: 150}}  />
-          <img src="https://i0.wp.com/corporate.cptechsol.com/wp-content/uploads/2021/03/cptechsol.jpg?fit=143%2C34&ssl=1" style={{height: 50, width: 150}}  />
-          <img src="static/clients/eByte.png" style={{height: 60, width: 250}}   />
-          <img src="static/clients/techroble.png" style={{height: 60,}}   />
+          <img src="static/clients/futurevision.png" style={{height: 60, width: 150}} alt="test" />
+          <img src="https://i0.wp.com/corporate.cptechsol.com/wp-content/uploads/2021/03/cptechsol.jpg?fit=143%2C34&ssl=1" alt="test" style={{height: 50, width: 150}}  />
+          <img src="static/clients/eByte.png" style={{height: 60, width: 250}} alt="test"  />
+          <img src="static/clients/techroble.png" style={{height: 60,}} alt="test" />
         </div>
       </ImgDiv>
     </Container>

@@ -71,7 +71,7 @@ const DownloadApp = () => {
     <Container>
       <LeftSection>
         <h6 data-aos="fade-up">Download Our App</h6>
-        <h4 data-aos="fade-up">The choice is yours, we've got you covered</h4>
+        <h4 data-aos="fade-up">{`The choice is yours, we've got you covered`}</h4>
         <p data-aos="fade-up">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
           tristique, nisl ut viverra porttitor, dolor sem lacinia orci, et

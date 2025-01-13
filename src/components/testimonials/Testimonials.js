@@ -104,12 +104,12 @@ const Testimonials = () => {
   return (
     <Container>
       <h6 data-aos="fade-up">TESTIMONIALS</h6>
-      <h4 data-aos="fade-up">What Our Client Say's</h4>
+      <h4 data-aos="fade-up">{`What Our Client Say's`}</h4>
       <p data-aos="fade-up">
        We value our clients and their experiences with us. 
       </p>
       <p data-aos="fade-up">
-      Here’s what they say about our commitment to excellence and strong relationships.
+      {`Here’s what they say about our commitment to excellence and strong relationships.`}
       </p>
       <TestimonialsContainer sx={{mt:2}}>
         <div data-aos="fade-right">
@@ -125,9 +125,9 @@ const Testimonials = () => {
               </div>
             </ImgUser>
             <p>
-              “I believe in lifelong learning and Learn. is a great place to
+             {` “I believe in lifelong learning and Learn. is a great place to
               learn from experts. I've learned a lot and recommend it to all my
-              friends and familys.”
+              friends and familys.”`}
             </p>
           </Content>
         </div>
@@ -144,9 +144,9 @@ const Testimonials = () => {
               </div>
             </ImgUser>
             <p>
-              “I believe in lifelong learning and Learn. is a great place to
+              {`“I believe in lifelong learning and Learn. is a great place to
               learn from experts. I've learned a lot and recommend it to all my
-              friends and familys.”
+              friends and familys.”`}
             </p>
           </Content>
         </div>
@@ -163,9 +163,9 @@ const Testimonials = () => {
               </div>
             </ImgUser>
             <p>
-              “I believe in lifelong learning and Learn. is a great place to
+              {`“I believe in lifelong learning and Learn. is a great place to
               learn from experts. I've learned a lot and recommend it to all my
-              friends and familys.”
+              friends and familys.”`}
             </p>
           </Content>
         </div>
@@ -182,9 +182,9 @@ const Testimonials = () => {
               </div>
             </ImgUser>
             <p>
-              “I believe in lifelong learning and Learn. is a great place to
+              {`“I believe in lifelong learning and Learn. is a great place to
               learn from experts. I've learned a lot and recommend it to all my
-              friends and familys.”
+              friends and familys.”`}
             </p>
           </Content>
         </div>

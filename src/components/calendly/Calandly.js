@@ -11,12 +11,12 @@ export default function ScheduleMeeting() {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        textAlign:'center'
+        textAlign:"center"
       }}
     >
       <h6 style={{ textAlign: "center", marginTop:10 }}>Schedule a Meeting</h6>
-      <h5> If you're here, we'd love to chat</h5>
-      <p>Book a free private call where we'll listen to your problems & {<br />} show you how BeltaTech's unique approach can help you achieve the desired goals.</p>
+      <h5> {`If you're here, we'd love to chat`}</h5>
+      <p>{`Book a free private call where we'll listen to your problems &`} {<br />} {`show you how BeltaTech's unique approach can help you achieve the desired goals.`}</p>
       <Box
         sx={{
           width: "100%",

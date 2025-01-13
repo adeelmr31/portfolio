@@ -125,7 +125,7 @@ const Chart = () => {
       <Content>
         <Sections>
           {/* <PiChartCard /> */}
-          <img src="../../static/b1.png" height={450} width={500} />
+          <img src="../../static/b1.png" height={450} width={500} alt="test" />
         </Sections>
         <Sections data-aos="fade-up">
           <SectionContent>
