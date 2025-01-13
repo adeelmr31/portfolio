@@ -1,11 +1,6 @@
 "use client";
 import React from "react";
 import { styled } from "@mui/material/styles";
-import BrandsOne from "app/assets/images/brands/uideck.svg";
-import BrandsTwo from "app/assets/images/brands/tailgrids.svg";
-import BrandsThree from "app/assets/images/brands/lineicons.svg";
-import BrandsFour from "app/assets/images/brands/ayroui.svg";
-import BrandsFive from "app/assets/images/brands/plainadmin.svg";
 
 const Container = styled("div")(({ theme }) => ({
   display: "flex",
@@ -42,7 +37,7 @@ const ImgDiv = styled("div")(({ theme }) => ({
     flexWrap: "wrap",
     justifyContent: "center",
     alignItems: "center",
-    gap: "30px",
+    gap: "50px",
     "& svg": {
       filter: "contrast(0)",
       cursor: "pointer",
@@ -57,15 +52,15 @@ const Partners = () => {
   return (
     <Container data-aos="fade-up">
       <h1 className="heading">
-        Join the 20,000+ companies using the our platform
+        Visionary Partners
       </h1>
       <ImgDiv>
         <div className="svg__brands">
-          <BrandsOne />
-          <BrandsTwo />
-          <BrandsThree />
-          <BrandsFour />
-          <BrandsFive />
+          {/* <BrandsOne /> */}
+          <img src="static/clients/futurevision.png" style={{height: 60, width: 150}}  />
+          <img src="https://i0.wp.com/corporate.cptechsol.com/wp-content/uploads/2021/03/cptechsol.jpg?fit=143%2C34&ssl=1" style={{height: 50, width: 150}}  />
+          <img src="static/clients/eByte.png" style={{height: 60, width: 250}}   />
+          <img src="static/clients/techroble.png" style={{height: 60,}}   />
         </div>
       </ImgDiv>
     </Container>

@@ -4,6 +4,8 @@ import { styled } from "@mui/material/styles";
 import CustomButton from "../customBtn/CustomButton";
 import SubmitIcon from "/static/Submit.svg";
 import NewsVector from "/static/newsletter-shape.svg";
+import { Stack, Typography } from "@mui/material";
+import {Phone, PhoneIcon} from '@mui/icons-material';
 
 const Container = styled("div")(({ theme }) => ({
   display: "flex",
@@ -247,31 +249,17 @@ const ContactUs = () => {
           </div>
           <ContentMain>
             {/* card here */}
-            <ContentSection>
+            <ContentSection sx={{ marginLeft: { xs: "5px", md: "30px"}}} >
               <HeadingContent>
-                <h6>Our Location</h6>
-                <p>401 Broadway, 24th Floor, Orchard Cloud View, London</p>
-              </HeadingContent>
-            </ContentSection>
-            {/* card here */}
-            <ContentSection>
-              <HeadingContent>
-                <h6>Our Location</h6>
-                <p>401 Broadway, 24th Floor, Orchard Cloud View, London</p>
-              </HeadingContent>
-            </ContentSection>
-            {/* card here */}
-            <ContentSection>
-              <HeadingContent>
-                <h6>Our Location</h6>
-                <p>401 Broadway, 24th Floor, Orchard Cloud View, London</p>
-              </HeadingContent>
-            </ContentSection>
-            {/* card here */}
-            <ContentSection>
-              <HeadingContent>
-                <h6>Our Location</h6>
-                <p>401 Broadway, 24th Floor, Orchard Cloud View, London</p>
+                <h6>Our Locations</h6>
+                <p> <strong> {`->`} </strong> 39 Babar Block, <br /> New Garden Town, Lahore</p>
+
+                <p style={{marginTop:"10px"}} ><strong> {`->`} </strong>183-C Nawab Town, <br /> Raiwand Road, Lahore</p>
+                <Stack gap={7} direction={"row"} py={2} >
+                <Stack direction={'row'}> <Phone sx={{color: '#3E7DFF'}}  /> <Typography>+923042466552</Typography> </Stack>
+                <Stack direction={'row'}> <Phone sx={{color: '#3E7DFF'}} /> <Typography>+17542198797</Typography> </Stack>
+                </Stack>
+                
               </HeadingContent>
             </ContentSection>
           </ContentMain>

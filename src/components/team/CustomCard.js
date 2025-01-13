@@ -22,18 +22,25 @@ const CustomBoxSocial = styled(Box)(({ theme }) => ({
   },
 }));
 
-export default function CustomCard() {
+export default function CustomCard({ name, src,position }) {
   return (
     <Card
       sx={{ padding: "20px", borderRadius: "10px", backgroundColor: "#f5f8ff" }}
     >
       <CardMedia
         component="img"
-        height="140"
-        image="/static/team.jpg"
+        height="180"
+        image={src}
         alt="team"
-        sx={{ marginBottom: "10px", borderRadius: "10px" }}
+        sx={{
+          marginBottom: "10px",
+          borderRadius: "10px",
+          width: '180px',
+          display: 'block',
+          margin: '10px auto',
+        }}
       />
+
       <CardContent>
         <Typography
           sx={{ fontSize: "18px", fontWeight: "600", color: "rgb(8, 3, 33)" }}
@@ -41,7 +48,7 @@ export default function CustomCard() {
           variant="h5"
           component="div"
         >
-          Eva Watson
+          {name}
         </Typography>
 
         <Typography
@@ -53,14 +60,14 @@ export default function CustomCard() {
           }}
           variant="body2"
         >
-          Marketing Expert
+          {position}
         </Typography>
-        <CustomBoxSocial>
+        {/* <CustomBoxSocial>
           <FacebookIcon />
           <XIcon />
           <LinkedIcon />
           <YouIcon />
-        </CustomBoxSocial>
+        </CustomBoxSocial> */}
       </CardContent>
     </Card>
   );

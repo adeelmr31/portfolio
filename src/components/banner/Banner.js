@@ -10,75 +10,67 @@ import {
 } from "./styles";
 import ImgIcon from "app/assets/images/hero-shape-2.svg";
 import BannerIcon from "app/assets/images/BannerMain.svg";
-import BTCIcon from "app/assets/images/BTC.svg";
-import BTC1Icon from "app/assets/images/BTC1.svg";
-import BTC2Icon from "app/assets/images/BTC2.svg";
-import BTC3Icon from "app/assets/images/BTC3.svg";
-import BTC4Icon from "app/assets/images/BTC4.svg";
-import BTC5Icon from "app/assets/images/BTC5.svg";
 import CustomButton from "../customBtn/CustomButton";
 
+
+
 const Banner = () => {
-  
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
   return (
     <BannerContainer>
       <ImgIcon className="banner__first" alt="background" />
       <BannerIcon className="banner__second" alt="background" />
       <TextAreaDiv data-aos="fade-up">
-        <h1>Next.js Template and Boilerplate for Crypto, ICO and Web3</h1>
+        <h1>Revolutionizing Industries with Scalable Tech Solutions.</h1>
         <p>
-          A Next.js website template for Crypto Currency, Blockchain, ICO, and
-          Web3, meticulously styled with Tailwind CSS. This boilerplate includes
-          essential integrations, UI components, pages, and enabling you to
-          launch a comprehensive website or landing page for anything related to
-          Crypto, Blockchain, and Web3.
+        From startups to enterprises, we deliver cutting-edge technologies that adapt to your business needs and fuel sustainable growth.
         </p>
       </TextAreaDiv>
       <DigitalCurrencies data-aos="fade-up">
-        {/* Currency */}
-        <Currency>
           <CustomToolTip arrow placement="top" title="Bitcoin (BTC)">
-            <BTCIcon />
-          </CustomToolTip>
-        </Currency>
-        {/* Currency */}
         <Currency>
-          <CustomToolTip arrow placement="top" title="Bitcoin (BTC)">
-            <BTC1Icon />
-          </CustomToolTip>
+            <img src="static/Icons/layers.png" />
         </Currency>
-        {/* Currency */}
+          </CustomToolTip>
+          <CustomToolTip arrow placement="top" title="Bitcoin (BTC)">
         <Currency>
-          <CustomToolTip arrow placement="top" title="Bitcoin (BTC)">
-            <BTC2Icon />
-          </CustomToolTip>
+            <img src="static/Icons/mobile-coding.png" />
         </Currency>
-        {/* Currency */}
+          </CustomToolTip>
+          <CustomToolTip arrow placement="top" title="Bitcoin (BTC)">
         <Currency>
-          <CustomToolTip arrow placement="top" title="Bitcoin (BTC)">
-            <BTC3Icon />
-          </CustomToolTip>
+            <img src="static/Icons/ux.png" />
         </Currency>
-        {/* Currency */}
+          </CustomToolTip>
+          <CustomToolTip arrow placement="top" title="Bitcoin (BTC)">
         <Currency>
-          <CustomToolTip arrow placement="top" title="Bitcoin (BTC)">
-            <BTC4Icon />
-          </CustomToolTip>
+            <img src="static/Icons/jobs.png" />
         </Currency>
-        {/* Currency */}
+          </CustomToolTip>
+          <CustomToolTip arrow placement="top" title="Bitcoin (BTC)">
         <Currency>
-          <CustomToolTip arrow placement="top" title="Bitcoin (BTC)">
-            <BTC5Icon />
-          </CustomToolTip>
+            <img src="static/Icons/database.png" />
         </Currency>
+          </CustomToolTip>
+          <CustomToolTip arrow placement="top" title="Bitcoin (BTC)">
+        <Currency>
+            <img src="static/Icons/social-media.png" />
+        </Currency>
+          </CustomToolTip>
       </DigitalCurrencies>
       <ButtonDiv data-aos="fade-up">
         <CustomButton
           color={"#fff"}
           bg={"#3e7dff"}
-          title={"Buy Tokens 47% off"}
+          title={"Schedule Free Consultation"}
           radius={"25px"}
           width={"222px"}
+          onClick={() => scrollToSection("calendly")}
         />
       </ButtonDiv>
     </BannerContainer>

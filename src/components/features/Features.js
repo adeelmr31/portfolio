@@ -53,73 +53,91 @@ const IconDiv = styled("div")(({ theme }) => ({
 const Features = () => {
   return (
     <Container>
-      <h6 data-aos="fade-up">CRYPTO FEATURE</h6>
-      <h4 data-aos="fade-up">Best Features</h4>
+      <h6 data-aos="fade-up">What We Provide</h6>
+      <h4 data-aos="fade-up">OUR SERVICES</h4>
       <p data-aos="fade-up">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      </p>
-      <p data-aos="fade-up">
-        Nunc sed congue arcu, In et dignissim quam condimentum vel.
+      We deliver innovative, scalable solutions tailored to drive your business growth and success.
       </p>
       <CardsDiv data-aos="fade-up">
         <CardItem>
           <IconDiv>
-            <img src="../../../static/safety.svg" alt="icon" />
+            <img src="../../../static/services/web.png" style={{height:40, width:40}} alt="icon" />
           </IconDiv>
-          <h5>Safe & Secure</h5>
+          <h5>Web Developmennt</h5>
           <p>
-            Lorem ipsum dolor sit amet consectetur elit, sed do eiusmod tempor
-            labore labore labore et dolor .
+          Dynamic website creation to showcase your brand with intuitive navigation.
           </p>
         </CardItem>
         <CardItem>
           <IconDiv>
-            <img src="../../../static/Bonus.svg" alt="icon" />
+            <img src="../../../static/services/mobile.png" alt="icon" style={{height:40, width:40}}/>
           </IconDiv>
-          <h5>Early Bonus</h5>
+          <h5>Mobile Applications</h5>
           <p>
-            Lorem ipsum dolor sit amet consectetur elit, sed do eiusmod tempor
-            labore labore labore et dolor .
+          Tailored app development for seamless user experiences on various devices.
           </p>
         </CardItem>
         <CardItem>
           <IconDiv>
-            <img src="../../../static/access.svg" alt="icon" />
+            <img src="../../../static/services/custom.png" alt="icon" style={{height:40, width:40}}/>
           </IconDiv>
-          <h5>Universal Access</h5>
+          <h5>Custom Softwares</h5>
           <p>
-            Lorem ipsum dolor sit amet consectetur elit, sed do eiusmod tempor
-            labore labore labore et dolor .
+          Personalized solutions to optimize business operations and efficiency.
           </p>
         </CardItem>
         <CardItem>
           <IconDiv>
-            <img src="../../../static/storage.svg" alt="icon" />
+            <img src="../../../static/services/design.png" alt="icon" style={{height:40, width:40}}/>
           </IconDiv>
-          <h5>Secure Storage</h5>
+          <h5>Creative Design Solutions</h5>
           <p>
-            Lorem ipsum dolor sit amet consectetur elit, sed do eiusmod tempor
-            labore labore labore et dolor .
+          We create beautiful, user-friendly designs that bring your brand to life and make every interaction meaningful.
           </p>
         </CardItem>
         <CardItem>
           <IconDiv>
-            <img src="../../../static/cost.svg" alt="icon" />
+            <img src="../../../static/services/recruitment.png"alt="icon" style={{height:40, width:40}}/>
           </IconDiv>
-          <h5>Low Cost</h5>
+          <h5>Internation Recruitment</h5>
           <p>
-            Lorem ipsum dolor sit amet consectetur elit, sed do eiusmod tempor
-            labore labore labore et dolor .
+          Connecting global talent with opportunities, helping businesses and individuals thrive across borders.
           </p>
         </CardItem>
         <CardItem>
           <IconDiv>
-            <img src="../../../static/profit.svg" alt="icon" />
+            <img src="../../../static/services/seo.png" alt="icon" style={{height:40, width:40}}/>
           </IconDiv>
-          <h5>Several Profit</h5>
+          <h5>SEO</h5>
           <p>
-            Lorem ipsum dolor sit amet consectetur elit, sed do eiusmod tempor
-            labore labore labore et dolor .
+          Boosting your online visibility with tailored SEO strategies that drive traffic and deliver results.
+          </p>
+        </CardItem>
+        <CardItem>
+          <IconDiv>
+            <img src="../../../static/services/staff.png" alt="icon" style={{height:40, width:40}}/>
+          </IconDiv>
+          <h5>Staff Augmentation</h5>
+          <p>
+          Empowering your team with top talent through flexible and scalable staff augmentation solutions.
+          </p>
+        </CardItem>
+        <CardItem>
+          <IconDiv>
+            <img src="../../../static/services/marketing.png" alt="icon" style={{height:40, width:40}}/>
+          </IconDiv>
+          <h5>Digital Marketing Solutions</h5>
+          <p>
+          Helping your brand grow with data-driven digital marketing strategies that engage, convert, and deliver results.
+          </p>
+        </CardItem>
+        <CardItem>
+          <IconDiv>
+            <img src="../../../static/services/cyber.png" alt="icon" style={{height: 40, width:40}} />
+          </IconDiv>
+          <h5>Cyber Security</h5>
+          <p>
+          Protecting your business with advanced cybersecurity solutions that safeguard your data and ensure peace of mind.
           </p>
         </CardItem>
       </CardsDiv>

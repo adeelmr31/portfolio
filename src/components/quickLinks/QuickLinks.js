@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { styled } from "@mui/material/styles";
 import FooterBg from "/static/footer-shape-2.svg";
 import Discord from "/static/discord.svg";
@@ -7,6 +7,7 @@ import X from "/static/twitter.svg";
 import Linkedin from "/static/Linkedin.svg";
 import YouTube from "/static/youtube.svg";
 import Cal from "/static/cal.svg";
+import NewsCardFooter from "./card";
 
 const Container = styled("div")(({ theme }) => ({
   marginTop: "100px",
@@ -131,20 +132,42 @@ const QuickLinksDiv = styled("div")(({ theme }) => ({
 }));
 
 const QuickLinks = () => {
+  const [blogs, setBlogs] = useState([]);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    const fetchBlogs = async () => {
+      try {
+        const response = await fetch(
+          "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/tag/artificial-intelligence"
+        );
+        const data = await response.json();
+        setBlogs(data.items.slice(3, 5) || []);
+      } catch (error) {
+        console.error("Error fetching blogs:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchBlogs();
+  }, []);
+
+  const extractThumbnail = (html) => {
+    const imgMatch = html.match(/<img[^>]+src="([^">]+)"/); // Match the first <img> tag and extract the src
+    return imgMatch ? imgMatch[1] : "/static/defaultThumbnail.png"; // Fallback image
+};
   return (
     <Container>
       <FooterBg className="bg__footer" />
       <ContentContainer>
         <ContentMain flexBasis={"30%"}>
-          <img data-aos="fade-up" src="/static/logo.svg" alt="logo" />
+          <img data-aos="fade-up" src="/static/beltaLogo.png" height={'100px'} alt="logo" />
           <p data-aos="fade-up">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae
             quam nec ante fringilla vel at erat convallis elit.
           </p>
           <SocialLinks data-aos="fade-up" className="social__links">
-            <div className="social__items">
-              <Discord />
-            </div>
             <div className="social__items">
               <X />
             </div>
@@ -156,61 +179,25 @@ const QuickLinks = () => {
             </div>
           </SocialLinks>
         </ContentMain>
-        <ContentMain flexBasis={"15%"}>
+        <ContentMain flexBasis={"25%"}>
           <QuickLinksDiv>
-            <h1 data-aos="fade-up">Quick Links</h1>
+            <h1>Quick Links</h1>
             <div data-aos="fade-up" className="links">
-              <a href="#">What is ico</a>
-              <a href="#">Roadmap</a>
-              <a href="#">Whitepaper</a>
-              <a href="#">Social Network</a>
-              <a href="#">Join Us Now</a>
-            </div>
-          </QuickLinksDiv>
-        </ContentMain>
-        <ContentMain flexBasis={"15%"}>
-          <QuickLinksDiv>
-            <h1>Supports</h1>
-            <div data-aos="fade-up" className="links">
-              <a href="#">Setting & Privacy</a>
-              <a href="#">Help & Support</a>
-              <a href="#">Terms & Conditions</a>
-              <a href="#">24/7 Support</a>
-              <a href="#">On Point FAQs</a>
+              <a href="#">Home</a>
+              <a href="#features">Services</a>
+              <a href="#testimonials">Customers</a>
+              <a href="#chart">About Us</a>
+              <a href="#calendly">Schedule Free Consultation</a>
+              <a href="#faq">FAQs</a>
             </div>
           </QuickLinksDiv>
         </ContentMain>
         <ContentMain flexBasis={"35%"}>
           <QuickLinksDiv>
-            <h1 data-aos="fade-up">News & Post</h1>
-            <div data-aos="fade-up" className="news__div">
-              <img src="/static/userImg.jpg" alt="news" />
-              <div className="details">
-                <p className="hover__text">
-                  Laboris nisi aliquip dium exiuliym commo cons...
-                </p>
-                <p>
-                  <span>
-                    <Cal />
-                  </span>
-                  Aug 21, 2024
-                </p>
-              </div>
-            </div>
-            <div data-aos="fade-up" className="news__div">
-              <img src="/static/userImg.jpg" alt="news" />
-              <div className="details">
-                <p className="hover__text">
-                  Laboris nisi aliquip dium exiuliym commo cons...
-                </p>
-                <p>
-                  <span>
-                    <Cal />
-                  </span>
-                  Aug 21, 2024
-                </p>
-              </div>
-            </div>
+            <h1 data-aos="fade-up">Latest From Technology</h1>
+          {blogs.map((blog, index) => (
+            <NewsCardFooter key={index} data={blog} />
+          ))}
           </QuickLinksDiv>
         </ContentMain>
       </ContentContainer>

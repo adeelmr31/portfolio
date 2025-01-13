@@ -8,8 +8,8 @@ import ScrollToTop from "app/components/scrollToTop/ScrollToTop";
 import "aos/dist/aos.css";
 
 export const metadata = {
-  title: "Crypto",
-  description: "Crypto webapp with Next.js",
+  title: "BeltaTech",
+  description: "Revolutionizing Industries with Scalable Tech Solutions.",
 };
 
 export default function RootLayout({ children }) {

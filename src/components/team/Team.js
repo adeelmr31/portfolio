@@ -2,7 +2,7 @@
 import React from "react";
 import { styled } from "@mui/material/styles";
 import CustomCard from "./CustomCard";
-
+import { Grid } from "@mui/material";
 const Container = styled("div")(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
@@ -20,8 +20,11 @@ const Container = styled("div")(({ theme }) => ({
 }));
 
 const CardsContainer = styled("div")(({ theme }) => ({
-  display: "grid",
-  gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))",
+  display: "flex",
+  flexDirection: 'row',
+justifyContent:'space-around',
+
+  // gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))",
   gap: "2rem",
   padding: "0 2rem",
   marginBottom: "100px",
@@ -38,12 +41,21 @@ const Team = () => {
       <p data-aos="fade-up" className="margin__bottom">
         Nunc sed congue arcu, In et dignissim quam condimentum vel.
       </p>
-      <CardsContainer data-aos="fade-up">
-        <CustomCard />
-        <CustomCard />
-        <CustomCard />
-        <CustomCard />
-      </CardsContainer>
+      <Grid container spacing={2}>
+      <Grid item xs={12} sm={6} md={6} lg={3}>
+        <CustomCard name={'Muhammad Adeel'} src={'../../../static/adeel.png'} position={'CEO & Co-Founder'} />
+      </Grid>
+      <Grid item xs={12} sm={6} md={6} lg={3}>
+        <CustomCard name={'Kaneez Fatima'} src={'../../../static/kaneez.png'} position={'MD & Co-Founder'} />
+      </Grid>
+      <Grid item xs={12} sm={6} md={6} lg={3}>
+        <CustomCard name={'Muhammad Adeel'} src={'../../../static/adeel.png'} position={'CEO & Co-Founder'} />
+      </Grid>
+      <Grid item xs={12} sm={6} md={6} lg={3}>
+        <CustomCard name={'Kaneez Fatima'} src={'../../../static/kaneez.png'} position={'MD & Co-Founder'} />
+      </Grid>
+      {/* Add more Grid items as needed */}
+    </Grid>
     </Container>
   );
 };

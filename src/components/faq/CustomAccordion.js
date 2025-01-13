@@ -69,16 +69,12 @@ export default function CustomAccordion() {
           id="panel1bh-header"
         >
           <Typography className="title__main">
-            How can I participate in the ICO Token sale?
+          What services does your company offer?
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography className="body__text">
-            There are many variations of passages of Lorem Ipsum available, but
-            the majority have suffered alteration in some form, by injected
-            humour, or randomised words which don't look even slightly
-            believable. If you are going to use a passage of Lorem Ipsum, you
-            need to be sure there isn't anything.
+          We provide IT consulting, custom software development, cloud solutions, cybersecurity, and managed IT services tailored to meet your business needs.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -91,15 +87,11 @@ export default function CustomAccordion() {
           aria-controls="panel2bh-content"
           id="panel2bh-header"
         >
-          <Typography className="title__main">What is ICO Crypto?</Typography>
+          <Typography className="title__main">What industries do you specialize in?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography className="body__text">
-            There are many variations of passages of Lorem Ipsum available, but
-            the majority have suffered alteration in some form, by injected
-            humour, or randomised words which don't look even slightly
-            believable. If you are going to use a passage of Lorem Ipsum, you
-            need to be sure there isn't anything.
+          We cater to a variety of industries, including healthcare, finance, retail, manufacturing, education, and more.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -113,39 +105,12 @@ export default function CustomAccordion() {
           id="panel3bh-header"
         >
           <Typography className="title__main">
-            How do I benefit from the ICO Token?
+          How can your solutions help my business?
           </Typography>
         </AccordionSummary>
         <AccordionDetails className="body__text">
           <Typography>
-            There are many variations of passages of Lorem Ipsum available, but
-            the majority have suffered alteration in some form, by injected
-            humour, or randomised words which don't look even slightly
-            believable. If you are going to use a passage of Lorem Ipsum, you
-            need to be sure there isn't anything.
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion
-        expanded={expanded === "panel4"}
-        onChange={handleChange("panel4")}
-      >
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel4bh-content"
-          id="panel4bh-header"
-        >
-          <Typography className="title__main">
-            How can i purchase bitcoin?
-          </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography className="body__text">
-            There are many variations of passages of Lorem Ipsum available, but
-            the majority have suffered alteration in some form, by injected
-            humour, or randomised words which don't look even slightly
-            believable. If you are going to use a passage of Lorem Ipsum, you
-            need to be sure there isn't anything.
+          Our solutions are designed to streamline operations, enhance productivity, improve security, and reduce costs through cutting-edge technology and tailored strategies.
           </Typography>
         </AccordionDetails>
       </Accordion>

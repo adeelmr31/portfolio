@@ -130,7 +130,7 @@ const Timeline = () => {
       <TimelineDiv data-aos="fade-up">
         <div>
           <Content data-aos="fade-up">
-            <h5>Feb 25, 2025</h5>
+            <h5>Jan, 2023</h5>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed
               congue arcu, In et dignissim quam condimentum vel

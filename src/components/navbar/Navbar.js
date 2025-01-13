@@ -45,6 +45,7 @@ const Navbar = () => {
         "news",
         "contact",
         "quicklinks",
+        "calendly",
       ];
       for (let section of sections) {
         const element = document.getElementById(section);
@@ -82,7 +83,7 @@ const Navbar = () => {
   return (
     <NavbarWrapper className={scrolled ? "scroll" : ""}>
       {/* <Logo /> */}
-      <img src="/static/logo.svg" alt="logo" />
+      <img src="/static/beltaLogo.png" alt="logo" style={{height: 70, width:150}} />
       <MenuItems>
         <MenuItem>
           <Link
@@ -99,25 +100,25 @@ const Navbar = () => {
             onClick={(e) => handleScrollToSection(e, "features")}
             className={activeSection === "features" ? "active" : ""}
           >
-            Features
+            Services
           </Link>
         </MenuItem>
         <MenuItem>
           <Link
             href="#timeline"
-            onClick={(e) => handleScrollToSection(e, "timeline")}
-            className={activeSection === "timeline" ? "active" : ""}
+            onClick={(e) => handleScrollToSection(e, "testimonials")}
+            className={activeSection === "testimonials" ? "active" : ""}
           >
-            Roadmap
+            Customers
           </Link>
         </MenuItem>
         <MenuItem>
           <Link
-            href="#pages"
-            onClick={(e) => handleScrollToSection(e, "pages")}
-            className={activeSection === "pages" ? "active" : ""}
+            href="#chart"
+            onClick={(e) => handleScrollToSection(e, "chart")}
+            className={activeSection === "chart" ? "active" : ""}
           >
-            Pages
+            About Us
           </Link>
         </MenuItem>
         <MenuItem>
@@ -131,9 +132,9 @@ const Navbar = () => {
         </MenuItem>
       </MenuItems>
       <UserSearchArea>
-        <Search>
+        {/* <Search>
           <SearchIcon />
-        </Search>
+        </Search> */}
         {/* <ThemeDiv>
           <div className="light__mode__box">
             <LightMode />
@@ -141,13 +142,14 @@ const Navbar = () => {
           <DarkMode />
         </ThemeDiv> */}
         <CustomButton
-          title={"Sign In"}
+          title={"Schedule Free Consultation"}
           radius={"25px"}
           color={"#697987"}
           hover={"rgb(62 125 255)"}
           border={"1px solid #697987"}
-          width={"119px"}
+          // width={"119px"}
           height={"44px"}
+          onClick={(e) => handleScrollToSection(e, "calendly")}
           hidden
         />
         <AccountMenu />

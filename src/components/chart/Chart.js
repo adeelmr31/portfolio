@@ -124,31 +124,15 @@ const Chart = () => {
       />
       <Content>
         <Sections>
-          <PiChartCard />
+          {/* <PiChartCard /> */}
+          <img src="../../static/b1.png" height={450} width={500} />
         </Sections>
         <Sections data-aos="fade-up">
           <SectionContent>
-            <h6>TOKEN</h6>
-            <h4>Token Sale</h4>
+            <h6>About Us </h6>
+            <h5>Turning ideas into reality with innovation. </h5>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-              condimentum tellus at lectus pulvinar, id auctor felis iaculis. In
-              vestibulum neque sem, at dapibus justo facilisis in.
-            </p>
-            <ul>
-              <li>
-                <p>73% Financial Overhead</p>
-              </li>
-              <li>
-                <p>55% Bonus & found</p>
-              </li>
-              <li>
-                <p>38% it infastrueture</p>
-              </li>
-              <li>
-                <p>20.93% Gift Code Inventory</p>
-              </li>
-            </ul>
+            At BeltaTech, we specialize in delivering comprehensive IT consulting and innovative solutions designed to empower businesses in the digital era. Our approach is rooted in a seamless blend of input, process, and output, ensuring we consistently meet and exceed client expectations.</p>
           </SectionContent>
         </Sections>
       </Content>

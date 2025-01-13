@@ -106,22 +106,22 @@ const Testimonials = () => {
       <h6 data-aos="fade-up">TESTIMONIALS</h6>
       <h4 data-aos="fade-up">What Our Client Say's</h4>
       <p data-aos="fade-up">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+       We value our clients and their experiences with us. 
       </p>
-      <p data-aos="fade-up" className="margin__bottom">
-        Nunc sed congue arcu, In et dignissim quam condimentum vel.
+      <p data-aos="fade-up">
+      Here’s what they say about our commitment to excellence and strong relationships.
       </p>
-      <TestimonialsContainer>
+      <TestimonialsContainer sx={{mt:2}}>
         <div data-aos="fade-right">
           <BgTestimonials className="bg" />
           <Content>
             <ImgUser>
               <div className="img__user">
-                <img src="/static/userTestimonials.jpg" alt="user" />
+                <img src="/static/naseer.jpeg" alt="user" />
               </div>
               <div className="user__info">
-                <h5>Mariya Merry</h5>
-                <p>CEO & Founder @ Betex.</p>
+                <h5>Naseer Akhtar</h5>
+                <p>CEO @ Techroble.</p>
               </div>
             </ImgUser>
             <p>
@@ -136,11 +136,11 @@ const Testimonials = () => {
           <Content>
             <ImgUser>
               <div className="img__user">
-                <img src="/static/userTestimonials.jpg" alt="user" />
+                <img src="/static/satya.webp" alt="user" />
               </div>
               <div className="user__info">
-                <h5>Mariya Merry</h5>
-                <p>CEO & Founder @ Betex.</p>
+                <h5>Satyanarayana Raju</h5>
+                <p>CEO & Founder @ FutureVision360.</p>
               </div>
             </ImgUser>
             <p>
@@ -155,11 +155,11 @@ const Testimonials = () => {
           <Content>
             <ImgUser>
               <div className="img__user">
-                <img src="/static/userTestimonials.jpg" alt="user" />
+                <img src="/static/satya.webp" alt="user" />
               </div>
               <div className="user__info">
-                <h5>Mariya Merry</h5>
-                <p>CEO & Founder @ Betex.</p>
+                <h5>Gaurav Kasturia</h5>
+                <p>CEO & Founder @ Ebyte Solutions.</p>
               </div>
             </ImgUser>
             <p>
@@ -174,11 +174,11 @@ const Testimonials = () => {
           <Content>
             <ImgUser>
               <div className="img__user">
-                <img src="/static/userTestimonials.jpg" alt="user" />
+                <img src="/static/qarab.jpeg" alt="user" />
               </div>
               <div className="user__info">
-                <h5>Mariya Merry</h5>
-                <p>CEO & Founder @ Betex.</p>
+                <h5>Qarab Raza </h5>
+                <p>CEO @ CPTECHSOL.</p>
               </div>
             </ImgUser>
             <p>

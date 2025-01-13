@@ -13,6 +13,8 @@ import ContactUs from "app/components/contactUs/ContactUs";
 import QuickLinks from "app/components/quickLinks/QuickLinks";
 import AOS from "aos";
 import { useEffect } from "react";
+import Engagements from "app/components/engagement/Engagement";
+import ScheduleMeeting from "app/components/calendly/Calandly";
 
 export default function Home() {
   useEffect(() => {
@@ -35,17 +37,23 @@ export default function Home() {
       <section id="chart">
         <Chart />
       </section>
-      <section id="timeline">
+      {/* <section id="timeline">
         <Timeline />
+      </section> */}
+      <section id="testimonials">
+        <Testimonials />
       </section>
       <section id="team">
         <Team />
       </section>
-      <section id="testimonials">
-        <Testimonials />
-      </section>
-      <section id="download">
+      {/* <section id="download">
         <DownloadApp />
+      </section> */}
+      <section id="engagements">
+        <Engagements />
+      </section>
+      <section id="calendly">
+        <ScheduleMeeting />
       </section>
       <section id="faq">
         <FAQ />

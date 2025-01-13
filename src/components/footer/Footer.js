@@ -17,7 +17,7 @@ const FooterContainer = styled("footer")(({ theme }) => ({
 const Footer = () => {
   return (
     <FooterContainer>
-      <p>© Crypto - All Rights Reserved, Crafted by Nauman</p>
+      <p>© BeltaTech - All Rights Reserved</p>
     </FooterContainer>
   );
 };
