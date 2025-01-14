@@ -125,7 +125,7 @@ const Chart = () => {
         </Sections>
         <Sections data-aos="fade-up">
           <SectionContent>
-            <h6 style={{padding:5}} >About Us </h6>
+            {/* <h6 style={{padding:5}} >About Us </h6> */}
             <h5 style={{padding:5}}>Turning ideas into reality with innovation. </h5>
             <p style={{padding:5}}>
             At BeltaTech, we specialize in delivering comprehensive IT consulting and innovative solutions designed to empower businesses in the digital era. Our approach is rooted in a seamless blend of input, process, and output, ensuring we consistently meet and exceed client expectations.</p>
