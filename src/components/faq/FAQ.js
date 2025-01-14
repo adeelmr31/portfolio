@@ -11,7 +11,7 @@ const Container = styled("div")(({ theme }) => ({
   justifyContent: "center",
   textAlign: "center",
   width: "100%",
-  margin: "100px auto 0 auto",
+  margin: "0 auto 0 auto",
   backgroundColor: "#f5f8ff",
   padding: "8rem 0",
   position: "relative",

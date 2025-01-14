@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { styled } from "@mui/material/styles";
+import { Box } from "@mui/material";
 
 const Container = styled("div")(({ theme }) => ({
   display: "flex",
@@ -18,7 +19,6 @@ const Container = styled("div")(({ theme }) => ({
 const CardsDiv = styled("div")(({ theme }) => ({
   display: "flex",
   justifyContent: "space-between",
-  alignItems: "center",
   marginTop: "5rem",
   width: "100%",
   flexWrap: "wrap",
@@ -58,12 +58,13 @@ const Features = () => {
       <p data-aos="fade-up">
       We deliver innovative, scalable solutions tailored to drive your business growth and success.
       </p>
-      <CardsDiv data-aos="fade-up">
+      <Box data-aos="fade-up">
+      <CardsDiv >
         <CardItem>
           <IconDiv>
             <img src="../../../static/services/web.png" style={{height:40, width:40}} alt="icon" />
           </IconDiv>
-          <h5>Web Developmennt</h5>
+          <h5>Web Development</h5>
           <p>
           Dynamic website creation to showcase your brand with intuitive navigation.
           </p>
@@ -86,6 +87,8 @@ const Features = () => {
           Personalized solutions to optimize business operations and efficiency.
           </p>
         </CardItem>
+      </CardsDiv>
+      <CardsDiv >
         <CardItem>
           <IconDiv>
             <img src="../../../static/services/design.png" alt="icon" style={{height:40, width:40}}/>
@@ -113,6 +116,8 @@ const Features = () => {
           Boosting your online visibility with tailored SEO strategies that drive traffic and deliver results.
           </p>
         </CardItem>
+        </CardsDiv>
+      <CardsDiv >
         <CardItem>
           <IconDiv>
             <img src="../../../static/services/staff.png" alt="icon" style={{height:40, width:40}}/>
@@ -140,7 +145,8 @@ const Features = () => {
           Protecting your business with advanced cybersecurity solutions that safeguard your data and ensure peace of mind.
           </p>
         </CardItem>
-      </CardsDiv>
+      </CardsDiv >
+      </Box>
     </Container>
   );
 };

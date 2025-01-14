@@ -2,6 +2,7 @@
 import React from "react";
 import { styled } from "@mui/material/styles";
 import PiChartCard from "./Pichart";
+import { Box } from "@mui/material";
 
 const Container = styled("div")(({ theme }) => ({
   display: "flex",
@@ -40,7 +41,7 @@ const Content = styled("div")(({ theme }) => ({
 
 const Sections = styled("div")(({ theme }) => ({
   display: "flex",
-  justifyContent: "flex-end",
+  justifyContent: "center",
   alignItems: "center",
   width: "50%",
   height: "100%",
@@ -117,21 +118,16 @@ const SectionContent = styled("div")(({ theme }) => ({
 const Chart = () => {
   return (
     <Container>
-      <img
-        className="bg__chart"
-        src="../../../static/chartSvg.svg"
-        alt="background"
-      />
       <Content>
         <Sections>
           {/* <PiChartCard /> */}
-          <img src="../../static/b1.png" height={450} width={500} alt="test" />
+          <Box component={'img'} src="../../static/b1.png" sx={{ height: { xs: 300, md:450 } , width: { xs: 320, md:500 }, paddingY: 2  }}  alt="test" />
         </Sections>
         <Sections data-aos="fade-up">
           <SectionContent>
-            <h6>About Us </h6>
-            <h5>Turning ideas into reality with innovation. </h5>
-            <p>
+            <h6 style={{padding:5}} >About Us </h6>
+            <h5 style={{padding:5}}>Turning ideas into reality with innovation. </h5>
+            <p style={{padding:5}}>
             At BeltaTech, we specialize in delivering comprehensive IT consulting and innovative solutions designed to empower businesses in the digital era. Our approach is rooted in a seamless blend of input, process, and output, ensuring we consistently meet and exceed client expectations.</p>
           </SectionContent>
         </Sections>

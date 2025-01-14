@@ -9,7 +9,7 @@ const Container = styled("div")(({ theme }) => ({
   justifyContent: "center",
   textAlign: "center",
   width: "100%",
-  margin: "100px auto 0 auto",
+  margin: "0 auto 0 auto",
   padding: "8rem 0",
   [theme.breakpoints.down("md")]: {
     padding: "0",
