@@ -64,16 +64,57 @@ const Content = styled("div")(({ theme }) => ({
     },
 }));
 
+// const ImgUserT = styled("div")(({ theme }) => ({
+//     width: "100%",
+//     height: "190px",
+//     display: "flex",
+//     gap: "1.4rem",
+//     marginBottom: "2rem",
+//     "& .user__info": {
+//         display: 'flex',
+//         justifyContent: 'center',
+//         flexDirection: 'column',
+//         "& h5": {
+//             fontSize: "1.2rem",
+//             fontWeight: "bold",
+//             lineHeight: "1.5rem",
+//             width: "100%",
+//             textAlign: "left",
+//         },
+//         "& p": {
+//             fontSize: "16px",
+//             color: "rgb(99, 115, 129)",
+//             textAlign: 'left'
+//         },
+//     },
+//     "& .img__user": {
+//         minWidth: '190px',
+//         width: "190px",
+//         height: "190px",
+//         overflow: "hidden",
+//         borderRadius: "8px",
+//         "& img": {
+//             width: "100%",
+//             height: "100%",
+//             objectFit: "cover",
+//         },
+//     },
+// }));
 const ImgUserT = styled("div")(({ theme }) => ({
     width: "100%",
-    height: "190px",
+    height: "auto", // Updated to adapt to the new layout
     display: "flex",
     gap: "1.4rem",
     marginBottom: "2rem",
+    [theme.breakpoints.down("sm")]: {
+        flexDirection: "column", // Stacks the items vertically on small screens
+        alignItems: "center",   // Centers the content
+        gap: "1rem",            // Reduces the gap
+    },
     "& .user__info": {
-        display: 'flex',
-        justifyContent: 'center',
-        flexDirection: 'column',
+        display: "flex",
+        justifyContent: "center",
+        flexDirection: "column",
         "& h5": {
             fontSize: "1.2rem",
             fontWeight: "bold",
@@ -84,11 +125,14 @@ const ImgUserT = styled("div")(({ theme }) => ({
         "& p": {
             fontSize: "16px",
             color: "rgb(99, 115, 129)",
-            textAlign: 'left'
+            textAlign: "left",
+        },
+        [theme.breakpoints.down("sm")]: {
+            textAlign: "center", // Centers text on small screens
         },
     },
     "& .img__user": {
-        minWidth: '190px',
+        minWidth: "190px",
         width: "190px",
         height: "190px",
         overflow: "hidden",
@@ -97,6 +141,9 @@ const ImgUserT = styled("div")(({ theme }) => ({
             width: "100%",
             height: "100%",
             objectFit: "cover",
+        },
+        [theme.breakpoints.down("sm")]: {
+            marginBottom: "1rem", // Adds spacing below the image
         },
     },
 }));
