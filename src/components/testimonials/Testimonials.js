@@ -125,9 +125,7 @@ const Testimonials = () => {
               </div>
             </ImgUser>
             <p>
-             {` “I believe in lifelong learning and Learn. is a great place to
-              learn from experts. I've learned a lot and recommend it to all my
-              friends and familys.”`}
+             {` “The custom software solution BeltaTech created for us streamlined our operations, boosted efficiency, and helped us stay ahead of the competition.”`}
             </p>
           </Content>
         </div>
@@ -144,9 +142,7 @@ const Testimonials = () => {
               </div>
             </ImgUser>
             <p>
-              {`“I believe in lifelong learning and Learn. is a great place to
-              learn from experts. I've learned a lot and recommend it to all my
-              friends and familys.”`}
+              {`“BeltaTech’s international recruitment service connected us with top global talent, streamlining our hiring process and helping us scale effectively.”`}
             </p>
           </Content>
         </div>
@@ -163,9 +159,7 @@ const Testimonials = () => {
               </div>
             </ImgUser>
             <p>
-              {`“I believe in lifelong learning and Learn. is a great place to
-              learn from experts. I've learned a lot and recommend it to all my
-              friends and familys.”`}
+              {`“Exceptional service and expertise! BeltaTech's IT consulting helped us optimize our processes, improve efficiency, and drive significant growth.”`}
             </p>
           </Content>
         </div>
@@ -182,9 +176,7 @@ const Testimonials = () => {
               </div>
             </ImgUser>
             <p>
-              {`“I believe in lifelong learning and Learn. is a great place to
-              learn from experts. I've learned a lot and recommend it to all my
-              friends and familys.”`}
+              {`“BeltaTech provided a flexible, scalable staff augmentation solution that exceeded expectations, with seamless team integration and impressive results.”`}
             </p>
           </Content>
         </div>

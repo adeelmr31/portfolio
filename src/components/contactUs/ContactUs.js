@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { styled } from "@mui/material/styles";
 import CustomButton from "../customBtn/CustomButton";
 import SubmitIcon from "/static/Submit.svg";
@@ -239,6 +239,11 @@ const ButtonDiv = styled("div")(({ theme }) => ({
 }));
 
 const ContactUs = () => {
+  const [email, setEmail] = useState("");
+
+  const handleSubmit = () => {
+    setEmail("");
+  };
   return (
     <Container>
       <ContentContainer>
@@ -306,20 +311,21 @@ const ContactUs = () => {
           <NewsDiv>
             <h6>Newsletter</h6>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae
-              quam nec ante aliquet fringilla vel at erat.
+            Stay connected! Subscribe to our newsletter for the latest updates, insights, and exclusive content delivered straight to your inbox.
             </p>
           </NewsDiv>
           <InputDiv>
             <InputDivSection>
-              <input type="text" placeholder="Enter email address" />
-              <ButtonDiv>
+              <input type="text" placeholder="Enter email address"  value={email}
+                onChange={(e) => setEmail(e.target.value)} />
+              <ButtonDiv onClick={handleSubmit}  >
                 <CustomButton
                   endIcon={<SubmitIcon />}
                   title={"Submit"}
                   bg={"#3E7DFF"}
                   radius={"50px"}
                   color={"#fff"}
+                
                 />
               </ButtonDiv>
             </InputDivSection>
