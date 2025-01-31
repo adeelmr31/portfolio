@@ -41,9 +41,9 @@ const FAQ = () => {
       <FaqBg className="bg__faq" />
       <h6 data-aos="fade-up">FAQ</h6>
       <h4 data-aos="fade-up">Frequently Asked Questions</h4>
-      <p data-aos="fade-up">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p data-aos="fade-up">Here you’ll find answers to the most common questions about our services, solutions, and processes.</p>
       <p  data-aos="fade-up"className="margin__bottom">
-        Nunc sed congue arcu, In et dignissim quam condimentum vel.
+      If you don’t find what you’re looking for, feel free to contact us directly, and we’ll be happy to assist you.
       </p>
       <AccordionContainer>
         <CustomAccordion />

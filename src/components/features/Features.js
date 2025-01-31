@@ -28,7 +28,7 @@ const CardItem = styled("div")(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
-  justifyContent: "center",
+  justifyContent: "flex-start",
   width: "30%",
   gap: "1rem",
   marginBottom: "4rem",
@@ -56,96 +56,97 @@ const Features = () => {
       <h6 data-aos="fade-up">What We Provide</h6>
       <h4 data-aos="fade-up">OUR SERVICES</h4>
       <p data-aos="fade-up">
-      We deliver innovative, scalable solutions tailored to drive your business growth and success.
+        We deliver innovative, scalable solutions tailored to drive your business growth and success.
       </p>
       <Box data-aos="fade-up">
-      <CardsDiv >
-        <CardItem>
-          <IconDiv>
-            <img src="../../../static/services/web.png" style={{height:40, width:40}} alt="icon" />
-          </IconDiv>
-          <h5>Web Development</h5>
-          <p>
-          Dynamic website creation to showcase your brand with intuitive navigation.
-          </p>
-        </CardItem>
-        <CardItem>
-          <IconDiv>
-            <img src="../../../static/services/mobile.png" alt="icon" style={{height:40, width:40}}/>
-          </IconDiv>
-          <h5>Mobile Applications</h5>
-          <p>
-          Tailored app development for seamless user experiences on various devices.
-          </p>
-        </CardItem>
-        <CardItem>
-          <IconDiv>
-            <img src="../../../static/services/custom.png" alt="icon" style={{height:40, width:40}}/>
-          </IconDiv>
-          <h5>Custom Softwares</h5>
-          <p>
-          Personalized solutions to optimize business operations and efficiency.
-          </p>
-        </CardItem>
-      </CardsDiv>
-      <CardsDiv >
-        <CardItem>
-          <IconDiv>
-            <img src="../../../static/services/design.png" alt="icon" style={{height:40, width:40}}/>
-          </IconDiv>
-          <h5>Creative Design Solutions</h5>
-          <p>
-          We create beautiful, user-friendly designs that bring your brand to life and make every interaction meaningful.
-          </p>
-        </CardItem>
-        <CardItem>
-          <IconDiv>
-            <img src="../../../static/services/recruitment.png"alt="icon" style={{height:40, width:40}}/>
-          </IconDiv>
-          <h5>Internation Recruitment</h5>
-          <p>
-          Connecting global talent with opportunities, helping businesses and individuals thrive across borders.
-          </p>
-        </CardItem>
-        <CardItem>
-          <IconDiv>
-            <img src="../../../static/services/seo.png" alt="icon" style={{height:40, width:40}}/>
-          </IconDiv>
-          <h5>SEO</h5>
-          <p>
-          Boosting your online visibility with tailored SEO strategies that drive traffic and deliver results.
-          </p>
-        </CardItem>
+        <CardsDiv >
+          <CardItem>
+            <IconDiv>
+              <img src="../../../static/services/web.png" style={{ height: 40, width: 40 }} alt="icon" />
+            </IconDiv>
+            <h5>Web Development</h5>
+            <p>
+              Drive business growth with powerful, customized web application development designed to meet your unique objectives.
+            </p>
+          </CardItem>
+          <CardItem>
+            <IconDiv>
+              <img src="../../../static/services/mobile.png" alt="icon" style={{ height: 40, width: 40 }} />
+            </IconDiv>
+            <h5>Mobile Applications</h5>
+            <p>
+              Deliver seamless, high-quality mobile app experiences with innovative development, designed to boost engagement and meet business needs.
+            </p>
+          </CardItem>
+          <CardItem>
+            <IconDiv>
+              <img src="../../../static/services/custom.png" alt="icon" style={{ height: 40, width: 40 }} />
+            </IconDiv>
+            <h5>Custom Softwares</h5>
+            <p>
+
+              Tailored custom software solutions designed to streamline business operations, enhance productivity, and improve overall efficiency.
+            </p>
+          </CardItem>
         </CardsDiv>
-      <CardsDiv >
-        <CardItem>
-          <IconDiv>
-            <img src="../../../static/services/staff.png" alt="icon" style={{height:40, width:40}}/>
-          </IconDiv>
-          <h5>Staff Augmentation</h5>
-          <p>
-          Empowering your team with top talent through flexible and scalable staff augmentation solutions.
-          </p>
-        </CardItem>
-        <CardItem>
-          <IconDiv>
-            <img src="../../../static/services/marketing.png" alt="icon" style={{height:40, width:40}}/>
-          </IconDiv>
-          <h5>Digital Marketing Solutions</h5>
-          <p>
-          Helping your brand grow with data-driven digital marketing strategies that engage, convert, and deliver results.
-          </p>
-        </CardItem>
-        <CardItem>
-          <IconDiv>
-            <img src="../../../static/services/cyber.png" alt="icon" style={{height: 40, width:40}} />
-          </IconDiv>
-          <h5>Cyber Security</h5>
-          <p>
-          Protecting your business with advanced cybersecurity solutions that safeguard your data and ensure peace of mind.
-          </p>
-        </CardItem>
-      </CardsDiv >
+        <CardsDiv >
+          <CardItem>
+            <IconDiv>
+              <img src="../../../static/services/design.png" alt="icon" style={{ height: 40, width: 40 }} />
+            </IconDiv>
+            <h5>Creative Design Solutions</h5>
+            <p>
+            We design stunning, user-friendly interfaces that enhance brand identity, improve user engagement, and create meaningful digital experiences.
+            </p>
+          </CardItem>
+          <CardItem>
+            <IconDiv>
+              <img src="../../../static/services/recruitment.png" alt="icon" style={{ height: 40, width: 40 }} />
+            </IconDiv>
+            <h5>Internation Recruitment</h5>
+            <p>
+              Connecting global talent with the right opportunities, enabling businesses and professionals to grow, collaborate, and succeed worldwide.
+            </p>
+          </CardItem>
+          <CardItem>
+            <IconDiv>
+              <img src="../../../static/services/seo.png" alt="icon" style={{ height: 40, width: 40 }} />
+            </IconDiv>
+            <h5>SEO</h5>
+            <p>
+              Enhancing your online visibility with customized SEO strategies that attract traffic, increase engagement, and deliver measurable results.
+            </p>
+          </CardItem>
+        </CardsDiv>
+        <CardsDiv >
+          <CardItem>
+            <IconDiv>
+              <img src="../../../static/services/staff.png" alt="icon" style={{ height: 40, width: 40 }} />
+            </IconDiv>
+            <h5>Staff Augmentation</h5>
+            <p>
+            Empowering your team with top talent through flexible, scalable staff augmentation solutions for seamless integration and growth.
+            </p>
+          </CardItem>
+          <CardItem>
+            <IconDiv>
+              <img src="../../../static/services/marketing.png" alt="icon" style={{ height: 40, width: 40 }} />
+            </IconDiv>
+            <h5>Digital Marketing Solutions</h5>
+            <p>
+              Helping your brand grow with data-driven digital marketing strategies that engage, convert, and deliver results.
+            </p>
+          </CardItem>
+          <CardItem>
+            <IconDiv>
+              <img src="../../../static/services/cyber.png" alt="icon" style={{ height: 40, width: 40 }} />
+            </IconDiv>
+            <h5>Cyber Security</h5>
+            <p>
+              Protecting your business with advanced cybersecurity solutions that safeguard your data and ensure peace of mind.
+            </p>
+          </CardItem>
+        </CardsDiv >
       </Box>
     </Container>
   );

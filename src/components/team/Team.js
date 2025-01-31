@@ -34,14 +34,14 @@ const Team = () => {
   return (
     <Container>
       <h6 data-aos="fade-up">our team</h6>
-      <h4 data-aos="fade-up">Meet out Team</h4>
-      <p data-aos="fade-up">
+      <h4 data-aos="fade-up">Meet our Team</h4>
+      {/* <p data-aos="fade-up">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      </p>
-      <p data-aos="fade-up" className="margin__bottom">
+      </p> */}
+      {/* <p data-aos="fade-up" className="margin__bottom">
         Nunc sed congue arcu, In et dignissim quam condimentum vel.
-      </p>
-      <Grid container spacing={2}>
+      </p> */}
+      <Grid container spacing={2} justifyContent={'space-around'} >
       <Grid item xs={12} sm={6} md={6} lg={3}>
         <CustomCard name={'Muhammad Adeel'} src={'../../../static/adeel.png'} position={'CEO & Co-Founder'} />
       </Grid>
@@ -49,11 +49,11 @@ const Team = () => {
         <CustomCard name={'Kaneez Fatima'} src={'../../../static/kaneez.png'} position={'MD & Co-Founder'} />
       </Grid>
       <Grid item xs={12} sm={6} md={6} lg={3}>
-        <CustomCard name={'Muhammad Adeel'} src={'../../../static/adeel.png'} position={'CEO & Co-Founder'} />
+        <CustomCard name={'Sakeena Ibad Khawaja'} src={'../../../static/sakeena.png'} position={'Project Manager'} />
       </Grid>
-      <Grid item xs={12} sm={6} md={6} lg={3}>
+      {/* <Grid item xs={12} sm={6} md={6} lg={3}>
         <CustomCard name={'Kaneez Fatima'} src={'../../../static/kaneez.png'} position={'MD & Co-Founder'} />
-      </Grid>
+      </Grid> */}
       {/* Add more Grid items as needed */}
     </Grid>
     </Container>

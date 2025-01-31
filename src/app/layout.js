@@ -9,7 +9,7 @@ import "aos/dist/aos.css";
 
 export const metadata = {
   title: "BeltaTech",
-  description: "Revolutionizing Industries with Scalable Tech Solutions.",
+  description: "Innovate, Scale, and Dominate with Smart Technology.",
 };
 
 export default function RootLayout({ children }) {

@@ -26,9 +26,9 @@ const Banner = () => {
       <ImgIcon className="banner__first" alt="background" />
       <BannerIcon className="banner__second" alt="background" />
       <TextAreaDiv data-aos="fade-up">
-        <h1>Revolutionizing Industries with Scalable Tech Solutions.</h1>
+        <h1>Innovate, Scale, and Dominate with Smart Technology.</h1>
         <p>
-        From startups to enterprises, we deliver cutting-edge technologies that adapt to your business needs and fuel sustainable growth.
+        From startups to enterprises, we provide cutting-edge, scalable solutions that evolve with your business, driving innovation and long-term success.
         </p>
       </TextAreaDiv>
       <DigitalCurrencies data-aos="fade-up">
