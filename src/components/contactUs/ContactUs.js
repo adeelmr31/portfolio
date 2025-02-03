@@ -252,9 +252,8 @@ const ContactUs = () => {
             <h6>contact us</h6>
             <h4>{`Let's talk about your problem.`}</h4>
           </div>
-          <ContentMain>
-            {/* card here */}
-            <ContentSection sx={{ paddingX: '10%', marginLeft: { xs: "5px", md: "30px"}}} >
+          <ContentMain sx={{ paddingLeft: {xs:'7%', xl: '20%' }}} >
+            <ContentSection >
               <HeadingContent>
                 <h6>Our Locations</h6>
                 <p> <strong> {`->`} </strong> 39 Babar Block, <br /> New Garden Town, Lahore</p>
