@@ -43,10 +43,10 @@ const Team = () => {
       </p> */}
       <Grid container spacing={2} justifyContent={'space-around'} >
       <Grid item xs={12} sm={6} md={6} lg={3}>
-        <CustomCard name={'Muhammad Adeel'} src={'../../../static/adeel.png'} position={'CEO & Co-Founder'} />
+        <CustomCard name={'Kaneez Fatima'} src={'../../../static/kaneez.png'} position={'COO & Founder'} />
       </Grid>
       <Grid item xs={12} sm={6} md={6} lg={3}>
-        <CustomCard name={'Kaneez Fatima'} src={'../../../static/kaneez.png'} position={'MD & Co-Founder'} />
+        <CustomCard name={'Muhammad Adeel'} src={'../../../static/adeel.png'} position={'MD & Co-Founder'} />
       </Grid>
       <Grid item xs={12} sm={6} md={6} lg={3}>
         <CustomCard name={'Sakeena Ibad Khawaja'} src={'../../../static/sakeena.png'} position={'Project Manager'} />
@@ -54,7 +54,6 @@ const Team = () => {
       {/* <Grid item xs={12} sm={6} md={6} lg={3}>
         <CustomCard name={'Kaneez Fatima'} src={'../../../static/kaneez.png'} position={'MD & Co-Founder'} />
       </Grid> */}
-      {/* Add more Grid items as needed */}
     </Grid>
     </Container>
   );

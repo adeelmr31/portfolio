@@ -254,7 +254,7 @@ const ContactUs = () => {
           </div>
           <ContentMain>
             {/* card here */}
-            <ContentSection sx={{ marginLeft: { xs: "5px", md: "30px"}}} >
+            <ContentSection sx={{ paddingX: '10%', marginLeft: { xs: "5px", md: "30px"}}} >
               <HeadingContent>
                 <h6>Our Locations</h6>
                 <p> <strong> {`->`} </strong> 39 Babar Block, <br /> New Garden Town, Lahore</p>
