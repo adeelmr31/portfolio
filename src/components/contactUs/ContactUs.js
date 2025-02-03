@@ -253,7 +253,6 @@ const ContactUs = () => {
             <h4>{`Let's talk about your problem.`}</h4>
           </div>
           <ContentMain sx={{ paddingLeft: {xs:'7%', xl: '20%' }}} >
-            {/* card here */}
             <ContentSection >
               <HeadingContent>
                 <h6>Our Locations</h6>
