@@ -164,8 +164,7 @@ const QuickLinks = () => {
         <ContentMain flexBasis={"30%"}>
           <img data-aos="fade-up" src="/static/beltaLogo.png" height={'100px'} alt="logo" />
           <p data-aos="fade-up">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae
-            quam nec ante fringilla vel at erat convallis elit.
+          From startups to enterprises, we provide cutting-edge, scalable solutions that evolve with your business, driving innovation and long-term success.
           </p>
           <SocialLinks data-aos="fade-up" className="social__links">
             <div className="social__items">

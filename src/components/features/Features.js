@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { styled } from "@mui/material/styles";
-import { Box } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 
 const Container = styled("div")(({ theme }) => ({
   display: "flex",
@@ -29,7 +29,7 @@ const CardItem = styled("div")(({ theme }) => ({
   flexDirection: "column",
   alignItems: "center",
   justifyContent: "flex-start",
-  width: "30%",
+  // width: "30%",
   gap: "1rem",
   marginBottom: "4rem",
   [theme.breakpoints.down("md")]: {
@@ -59,94 +59,112 @@ const Features = () => {
         We deliver innovative, scalable solutions tailored to drive your business growth and success.
       </p>
       <Box data-aos="fade-up">
-        <CardsDiv >
-          <CardItem>
-            <IconDiv>
+        <Grid container >
+          <Grid item xs={12} sm={12} md={6} lg={4} p={2}  justifyContent={'center'}  >
+            <Box display={'flex'} justifyContent={'center'} py={2} >
+            <IconDiv >
               <img src="../../../static/services/web.png" style={{ height: 40, width: 40 }} alt="icon" />
             </IconDiv>
-            <h5>Web Development</h5>
+            </Box>
+            <Box minHeight={'80px'} display={'flex'} flexDirection={'column'} justifyContent={'center'} ><h5>Web Development</h5></Box>
             <p>
               Drive business growth with powerful, customized web application development designed to meet your unique objectives.
             </p>
-          </CardItem>
-          <CardItem>
+          </Grid>
+          <Grid item xs={12} sm={12} md={6} lg={4} p={2} justifyContent={'center'} >
+          <Box display={'flex'} justifyContent={'center'} py={2} >
             <IconDiv>
               <img src="../../../static/services/mobile.png" alt="icon" style={{ height: 40, width: 40 }} />
             </IconDiv>
-            <h5>Mobile Applications</h5>
+            </Box>
+            <Box minHeight={'80px'} display={'flex'} flexDirection={'column'} justifyContent={'center'} ><h5>Mobile Applications</h5></Box>
             <p>
               Deliver seamless, high-quality mobile app experiences with innovative development, designed to boost engagement and meet business needs.
             </p>
-          </CardItem>
-          <CardItem>
+          </Grid>
+          <Grid item xs={12} sm={12} md={6} lg={4} p={2} justifyContent={'center'} >
+          <Box display={'flex'} justifyContent={'center'} py={2} >
             <IconDiv>
               <img src="../../../static/services/custom.png" alt="icon" style={{ height: 40, width: 40 }} />
             </IconDiv>
-            <h5>Custom Softwares</h5>
+            </Box>
+            <Box minHeight={'80px'} display={'flex'} flexDirection={'column'} justifyContent={'center'} ><h5>Custom Softwares</h5></Box>
             <p>
 
               Tailored custom software solutions designed to streamline business operations, enhance productivity, and improve overall efficiency.
             </p>
-          </CardItem>
-        </CardsDiv>
-        <CardsDiv >
-          <CardItem>
+          </Grid>
+        {/* </CardsDiv>
+        <CardsDiv > */}
+          <Grid item xs={12} sm={12} md={6} lg={4} p={2} justifyContent={'center'} >
+          <Box display={'flex'} justifyContent={'center'} py={2} >
             <IconDiv>
               <img src="../../../static/services/design.png" alt="icon" style={{ height: 40, width: 40 }} />
             </IconDiv>
-            <h5>Creative Design Solutions</h5>
+            </Box>
+            <Box minHeight={'80px'} display={'flex'} flexDirection={'column'} justifyContent={'center'} ><h5>Creative Design Solutions</h5></Box>
             <p>
             We design stunning, user-friendly interfaces that enhance brand identity, improve user engagement, and create meaningful digital experiences.
             </p>
-          </CardItem>
-          <CardItem>
+          </Grid>
+          <Grid item xs={12} sm={12} md={6} lg={4} p={2} justifyContent={'center'} >
+          <Box display={'flex'} justifyContent={'center'} py={2} >
             <IconDiv>
               <img src="../../../static/services/recruitment.png" alt="icon" style={{ height: 40, width: 40 }} />
             </IconDiv>
-            <h5>Internation Recruitment</h5>
+            </Box>
+            <Box minHeight={'80px'} display={'flex'} flexDirection={'column'} justifyContent={'center'} ><h5>International Recruitment</h5></Box>
             <p>
               Connecting global talent with the right opportunities, enabling businesses and professionals to grow, collaborate, and succeed worldwide.
             </p>
-          </CardItem>
-          <CardItem>
+          </Grid>
+          <Grid item xs={12} sm={12} md={6} lg={4} p={2} justifyContent={'center'} >
+          <Box display={'flex'} justifyContent={'center'} py={2} >
             <IconDiv>
               <img src="../../../static/services/seo.png" alt="icon" style={{ height: 40, width: 40 }} />
             </IconDiv>
-            <h5>SEO</h5>
+            </Box>
+            <Box minHeight={'80px'} display={'flex'} flexDirection={'column'} justifyContent={'center'} ><h5>SEO</h5></Box>
             <p>
               Enhancing your online visibility with customized SEO strategies that attract traffic, increase engagement, and deliver measurable results.
             </p>
-          </CardItem>
-        </CardsDiv>
-        <CardsDiv >
-          <CardItem>
+          </Grid>
+        {/* </CardsDiv>
+        <CardsDiv > */}
+          <Grid item xs={12} sm={12} md={6} lg={4} p={2} justifyContent={'center'} >
+          <Box display={'flex'} justifyContent={'center'} py={2} >
             <IconDiv>
               <img src="../../../static/services/staff.png" alt="icon" style={{ height: 40, width: 40 }} />
             </IconDiv>
-            <h5>Staff Augmentation</h5>
+            </Box>
+            <Box minHeight={'80px'} display={'flex'} flexDirection={'column'} justifyContent={'center'} ><h5>Staff Augmentation</h5></Box>
             <p>
             Empowering your team with top talent through flexible, scalable staff augmentation solutions for seamless integration and growth.
             </p>
-          </CardItem>
-          <CardItem>
+          </Grid>
+          <Grid item xs={12} sm={12} md={6} lg={4} p={2} justifyContent={'center'} >
+          <Box display={'flex'} justifyContent={'center'} py={2} >
             <IconDiv>
               <img src="../../../static/services/marketing.png" alt="icon" style={{ height: 40, width: 40 }} />
             </IconDiv>
-            <h5>Digital Marketing Solutions</h5>
+            </Box>
+            <Box minHeight={'80px'} display={'flex'} flexDirection={'column'} justifyContent={'center'} ><h5>Digital Marketing Solutions</h5></Box>
             <p>
               Helping your brand grow with data-driven digital marketing strategies that engage, convert, and deliver results.
             </p>
-          </CardItem>
-          <CardItem>
+          </Grid>
+          <Grid item xs={12} sm={12} md={6} lg={4} p={2} justifyContent={'center'} >
+          <Box display={'flex'} justifyContent={'center'} py={2} >
             <IconDiv>
               <img src="../../../static/services/cyber.png" alt="icon" style={{ height: 40, width: 40 }} />
             </IconDiv>
-            <h5>Cyber Security</h5>
+            </Box>
+            <Box minHeight={'80px'} display={'flex'} flexDirection={'column'} justifyContent={'center'} ><h5>Cyber Security</h5></Box>
             <p>
               Protecting your business with advanced cybersecurity solutions that safeguard your data and ensure peace of mind.
             </p>
-          </CardItem>
-        </CardsDiv >
+          </Grid>
+        </Grid >
       </Box>
     </Container>
   );

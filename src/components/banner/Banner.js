@@ -32,32 +32,32 @@ const Banner = () => {
         </p>
       </TextAreaDiv>
       <DigitalCurrencies data-aos="fade-up">
-          <CustomToolTip arrow placement="top" title="Bitcoin (BTC)">
+          <CustomToolTip arrow placement="top" title="Web Development">
         <Currency>
             <img src="static/Icons/layers.png" />
         </Currency>
           </CustomToolTip>
-          <CustomToolTip arrow placement="top" title="Bitcoin (BTC)">
+          <CustomToolTip arrow placement="top" title="Mobile Development">
         <Currency>
             <img src="static/Icons/mobile-coding.png" />
         </Currency>
           </CustomToolTip>
-          <CustomToolTip arrow placement="top" title="Bitcoin (BTC)">
+          <CustomToolTip arrow placement="top" title="UI/UX">
         <Currency>
             <img src="static/Icons/ux.png" />
         </Currency>
           </CustomToolTip>
-          <CustomToolTip arrow placement="top" title="Bitcoin (BTC)">
+          <CustomToolTip arrow placement="top" title="International Recruitment">
         <Currency>
             <img src="static/Icons/jobs.png" />
         </Currency>
           </CustomToolTip>
-          <CustomToolTip arrow placement="top" title="Bitcoin (BTC)">
+          <CustomToolTip arrow placement="top" title="Databases">
         <Currency>
             <img src="static/Icons/database.png" />
         </Currency>
           </CustomToolTip>
-          <CustomToolTip arrow placement="top" title="Bitcoin (BTC)">
+          <CustomToolTip arrow placement="top" title="Social Media Marketing">
         <Currency>
             <img src="static/Icons/social-media.png" />
         </Currency>
