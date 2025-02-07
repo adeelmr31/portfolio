@@ -121,7 +121,16 @@ const Chart = () => {
       <Content>
         <Sections>
           {/* <PiChartCard /> */}
-          <Box component={'img'} src="../../static/b1.png" sx={{ height: { xs: 300, md:450 } , width: { xs: 320, md:500 }, paddingY: 2  }}  alt="test" />
+          <Box  component={'img'} src="../../static/b1.png" 
+          sx={{
+            maxWidth: "100%", // Ensures the image never overflows its container
+            maxHeight: "100%", // Prevents it from being too large
+            height: { xs: "auto", md: 380 }, // Adjusts height dynamically
+            width: { xs: "100%", md: 430 }, // Adjusts width dynamically
+            objectFit: "contain", // Ensures it scales properly
+            paddingY: 2,
+          }}
+          alt="test" />
         </Sections>
         <Sections data-aos="fade-up">
           <SectionContent>
