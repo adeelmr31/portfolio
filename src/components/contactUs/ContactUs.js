@@ -256,13 +256,15 @@ const ContactUs = () => {
             <ContentSection >
               <HeadingContent>
                 <h6>Our Locations</h6>
-                <p> <strong> {`->`} </strong> 39 Babar Block, <br /> New Garden Town, Lahore</p>
+                <p> <strong> {`->`} </strong> 807 E 49th St, <br /> Austin, TX 78751</p>
 
-                <p style={{marginTop:"10px"}} ><strong> {`->`} </strong>183-C Nawab Town, <br /> Raiwand Road, Lahore</p>
-                <Stack gap={7} direction={"row"} py={2} >
-                <Stack direction={'row'}> <Phone sx={{color: '#3E7DFF'}}  /> <Typography>+923042466552</Typography> </Stack>
+                {/* <p> <strong> {`->`} </strong> 39 Babar Block, <br /> New Garden Town, Lahore</p> */}
+
+                {/* <p style={{marginTop:"10px"}} ><strong> {`->`} </strong>183-C Nawab Town, <br /> Raiwand Road, Lahore</p> */}
+                <p style={{ marginTop: '10px' }}>
+                {/* <Stack direction={'row'}> <Phone sx={{color: '#3E7DFF'}}  /> <Typography>+923042466552</Typography> </Stack> */}
                 <Stack direction={'row'}> <Phone sx={{color: '#3E7DFF'}} /> <Typography>+17542198797</Typography> </Stack>
-                </Stack>
+                </p>
                 
               </HeadingContent>
             </ContentSection>
